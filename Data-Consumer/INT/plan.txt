@@ -1,0 +1,1152 @@
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  + create
+  - destroy
+-/+ destroy and then create replacement
+
+Terraform will perform the following actions:
+
+  # module.route_tables.aws_route.tgw_routes["A-APP1-10.0.0.0/8"] will be created
+  + resource "aws_route" "tgw_routes" {
+      + destination_cidr_block = "10.0.0.0/8"
+      + id                     = (known after apply)
+      + instance_id            = (known after apply)
+      + instance_owner_id      = (known after apply)
+      + network_interface_id   = (known after apply)
+      + origin                 = (known after apply)
+      + region                 = "us-west-2"
+      + route_table_id         = (known after apply)
+      + state                  = (known after apply)
+      + transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+  # module.route_tables.aws_route.tgw_routes["A-APP1-172.16.0.0/12"] will be created
+  + resource "aws_route" "tgw_routes" {
+      + destination_cidr_block = "172.16.0.0/12"
+      + id                     = (known after apply)
+      + instance_id            = (known after apply)
+      + instance_owner_id      = (known after apply)
+      + network_interface_id   = (known after apply)
+      + origin                 = (known after apply)
+      + region                 = "us-west-2"
+      + route_table_id         = (known after apply)
+      + state                  = (known after apply)
+      + transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+  # module.route_tables.aws_route.tgw_routes["A-APP1-192.168.0.0/16"] will be created
+  + resource "aws_route" "tgw_routes" {
+      + destination_cidr_block = "192.168.0.0/16"
+      + id                     = (known after apply)
+      + instance_id            = (known after apply)
+      + instance_owner_id      = (known after apply)
+      + network_interface_id   = (known after apply)
+      + origin                 = (known after apply)
+      + region                 = "us-west-2"
+      + route_table_id         = (known after apply)
+      + state                  = (known after apply)
+      + transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+  # module.route_tables.aws_route.tgw_routes["A-MGMT1-10.0.0.0/8"] will be created
+  + resource "aws_route" "tgw_routes" {
+      + destination_cidr_block = "10.0.0.0/8"
+      + id                     = (known after apply)
+      + instance_id            = (known after apply)
+      + instance_owner_id      = (known after apply)
+      + network_interface_id   = (known after apply)
+      + origin                 = (known after apply)
+      + region                 = "us-west-2"
+      + route_table_id         = (known after apply)
+      + state                  = (known after apply)
+      + transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+  # module.route_tables.aws_route.tgw_routes["A-MGMT1-172.16.0.0/12"] will be created
+  + resource "aws_route" "tgw_routes" {
+      + destination_cidr_block = "172.16.0.0/12"
+      + id                     = (known after apply)
+      + instance_id            = (known after apply)
+      + instance_owner_id      = (known after apply)
+      + network_interface_id   = (known after apply)
+      + origin                 = (known after apply)
+      + region                 = "us-west-2"
+      + route_table_id         = (known after apply)
+      + state                  = (known after apply)
+      + transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+  # module.route_tables.aws_route.tgw_routes["A-MGMT1-192.168.0.0/16"] will be created
+  + resource "aws_route" "tgw_routes" {
+      + destination_cidr_block = "192.168.0.0/16"
+      + id                     = (known after apply)
+      + instance_id            = (known after apply)
+      + instance_owner_id      = (known after apply)
+      + network_interface_id   = (known after apply)
+      + origin                 = (known after apply)
+      + region                 = "us-west-2"
+      + route_table_id         = (known after apply)
+      + state                  = (known after apply)
+      + transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+  # module.route_tables.aws_route.tgw_routes["A-TGW1-10.0.0.0/8"] will be created
+  + resource "aws_route" "tgw_routes" {
+      + destination_cidr_block = "10.0.0.0/8"
+      + id                     = (known after apply)
+      + instance_id            = (known after apply)
+      + instance_owner_id      = (known after apply)
+      + network_interface_id   = (known after apply)
+      + origin                 = (known after apply)
+      + region                 = "us-west-2"
+      + route_table_id         = (known after apply)
+      + state                  = (known after apply)
+      + transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+  # module.route_tables.aws_route.tgw_routes["A-TGW1-172.16.0.0/12"] will be created
+  + resource "aws_route" "tgw_routes" {
+      + destination_cidr_block = "172.16.0.0/12"
+      + id                     = (known after apply)
+      + instance_id            = (known after apply)
+      + instance_owner_id      = (known after apply)
+      + network_interface_id   = (known after apply)
+      + origin                 = (known after apply)
+      + region                 = "us-west-2"
+      + route_table_id         = (known after apply)
+      + state                  = (known after apply)
+      + transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+  # module.route_tables.aws_route.tgw_routes["A-TGW1-192.168.0.0/16"] will be created
+  + resource "aws_route" "tgw_routes" {
+      + destination_cidr_block = "192.168.0.0/16"
+      + id                     = (known after apply)
+      + instance_id            = (known after apply)
+      + instance_owner_id      = (known after apply)
+      + network_interface_id   = (known after apply)
+      + origin                 = (known after apply)
+      + region                 = "us-west-2"
+      + route_table_id         = (known after apply)
+      + state                  = (known after apply)
+      + transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+  # module.route_tables.aws_route.tgw_routes["B-APP1-10.0.0.0/8"] will be created
+  + resource "aws_route" "tgw_routes" {
+      + destination_cidr_block = "10.0.0.0/8"
+      + id                     = (known after apply)
+      + instance_id            = (known after apply)
+      + instance_owner_id      = (known after apply)
+      + network_interface_id   = (known after apply)
+      + origin                 = (known after apply)
+      + region                 = "us-west-2"
+      + route_table_id         = (known after apply)
+      + state                  = (known after apply)
+      + transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+  # module.route_tables.aws_route.tgw_routes["B-APP1-172.16.0.0/12"] will be created
+  + resource "aws_route" "tgw_routes" {
+      + destination_cidr_block = "172.16.0.0/12"
+      + id                     = (known after apply)
+      + instance_id            = (known after apply)
+      + instance_owner_id      = (known after apply)
+      + network_interface_id   = (known after apply)
+      + origin                 = (known after apply)
+      + region                 = "us-west-2"
+      + route_table_id         = (known after apply)
+      + state                  = (known after apply)
+      + transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+  # module.route_tables.aws_route.tgw_routes["B-APP1-192.168.0.0/16"] will be created
+  + resource "aws_route" "tgw_routes" {
+      + destination_cidr_block = "192.168.0.0/16"
+      + id                     = (known after apply)
+      + instance_id            = (known after apply)
+      + instance_owner_id      = (known after apply)
+      + network_interface_id   = (known after apply)
+      + origin                 = (known after apply)
+      + region                 = "us-west-2"
+      + route_table_id         = (known after apply)
+      + state                  = (known after apply)
+      + transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+  # module.route_tables.aws_route.tgw_routes["B-MGMT1-10.0.0.0/8"] will be created
+  + resource "aws_route" "tgw_routes" {
+      + destination_cidr_block = "10.0.0.0/8"
+      + id                     = (known after apply)
+      + instance_id            = (known after apply)
+      + instance_owner_id      = (known after apply)
+      + network_interface_id   = (known after apply)
+      + origin                 = (known after apply)
+      + region                 = "us-west-2"
+      + route_table_id         = (known after apply)
+      + state                  = (known after apply)
+      + transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+  # module.route_tables.aws_route.tgw_routes["B-MGMT1-172.16.0.0/12"] will be created
+  + resource "aws_route" "tgw_routes" {
+      + destination_cidr_block = "172.16.0.0/12"
+      + id                     = (known after apply)
+      + instance_id            = (known after apply)
+      + instance_owner_id      = (known after apply)
+      + network_interface_id   = (known after apply)
+      + origin                 = (known after apply)
+      + region                 = "us-west-2"
+      + route_table_id         = (known after apply)
+      + state                  = (known after apply)
+      + transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+  # module.route_tables.aws_route.tgw_routes["B-MGMT1-192.168.0.0/16"] will be created
+  + resource "aws_route" "tgw_routes" {
+      + destination_cidr_block = "192.168.0.0/16"
+      + id                     = (known after apply)
+      + instance_id            = (known after apply)
+      + instance_owner_id      = (known after apply)
+      + network_interface_id   = (known after apply)
+      + origin                 = (known after apply)
+      + region                 = "us-west-2"
+      + route_table_id         = (known after apply)
+      + state                  = (known after apply)
+      + transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+  # module.route_tables.aws_route.tgw_routes["B-TGW1-10.0.0.0/8"] will be created
+  + resource "aws_route" "tgw_routes" {
+      + destination_cidr_block = "10.0.0.0/8"
+      + id                     = (known after apply)
+      + instance_id            = (known after apply)
+      + instance_owner_id      = (known after apply)
+      + network_interface_id   = (known after apply)
+      + origin                 = (known after apply)
+      + region                 = "us-west-2"
+      + route_table_id         = (known after apply)
+      + state                  = (known after apply)
+      + transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+  # module.route_tables.aws_route.tgw_routes["B-TGW1-172.16.0.0/12"] will be created
+  + resource "aws_route" "tgw_routes" {
+      + destination_cidr_block = "172.16.0.0/12"
+      + id                     = (known after apply)
+      + instance_id            = (known after apply)
+      + instance_owner_id      = (known after apply)
+      + network_interface_id   = (known after apply)
+      + origin                 = (known after apply)
+      + region                 = "us-west-2"
+      + route_table_id         = (known after apply)
+      + state                  = (known after apply)
+      + transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+  # module.route_tables.aws_route.tgw_routes["B-TGW1-192.168.0.0/16"] will be created
+  + resource "aws_route" "tgw_routes" {
+      + destination_cidr_block = "192.168.0.0/16"
+      + id                     = (known after apply)
+      + instance_id            = (known after apply)
+      + instance_owner_id      = (known after apply)
+      + network_interface_id   = (known after apply)
+      + origin                 = (known after apply)
+      + region                 = "us-west-2"
+      + route_table_id         = (known after apply)
+      + state                  = (known after apply)
+      + transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+  # module.route_tables.aws_route.tgw_routes["C-APP1-10.0.0.0/8"] will be created
+  + resource "aws_route" "tgw_routes" {
+      + destination_cidr_block = "10.0.0.0/8"
+      + id                     = (known after apply)
+      + instance_id            = (known after apply)
+      + instance_owner_id      = (known after apply)
+      + network_interface_id   = (known after apply)
+      + origin                 = (known after apply)
+      + region                 = "us-west-2"
+      + route_table_id         = (known after apply)
+      + state                  = (known after apply)
+      + transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+  # module.route_tables.aws_route.tgw_routes["C-APP1-172.16.0.0/12"] will be created
+  + resource "aws_route" "tgw_routes" {
+      + destination_cidr_block = "172.16.0.0/12"
+      + id                     = (known after apply)
+      + instance_id            = (known after apply)
+      + instance_owner_id      = (known after apply)
+      + network_interface_id   = (known after apply)
+      + origin                 = (known after apply)
+      + region                 = "us-west-2"
+      + route_table_id         = (known after apply)
+      + state                  = (known after apply)
+      + transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+  # module.route_tables.aws_route.tgw_routes["C-APP1-192.168.0.0/16"] will be created
+  + resource "aws_route" "tgw_routes" {
+      + destination_cidr_block = "192.168.0.0/16"
+      + id                     = (known after apply)
+      + instance_id            = (known after apply)
+      + instance_owner_id      = (known after apply)
+      + network_interface_id   = (known after apply)
+      + origin                 = (known after apply)
+      + region                 = "us-west-2"
+      + route_table_id         = (known after apply)
+      + state                  = (known after apply)
+      + transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+  # module.route_tables.aws_route.tgw_routes["C-MGMT1-10.0.0.0/8"] will be created
+  + resource "aws_route" "tgw_routes" {
+      + destination_cidr_block = "10.0.0.0/8"
+      + id                     = (known after apply)
+      + instance_id            = (known after apply)
+      + instance_owner_id      = (known after apply)
+      + network_interface_id   = (known after apply)
+      + origin                 = (known after apply)
+      + region                 = "us-west-2"
+      + route_table_id         = (known after apply)
+      + state                  = (known after apply)
+      + transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+  # module.route_tables.aws_route.tgw_routes["C-MGMT1-172.16.0.0/12"] will be created
+  + resource "aws_route" "tgw_routes" {
+      + destination_cidr_block = "172.16.0.0/12"
+      + id                     = (known after apply)
+      + instance_id            = (known after apply)
+      + instance_owner_id      = (known after apply)
+      + network_interface_id   = (known after apply)
+      + origin                 = (known after apply)
+      + region                 = "us-west-2"
+      + route_table_id         = (known after apply)
+      + state                  = (known after apply)
+      + transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+  # module.route_tables.aws_route.tgw_routes["C-MGMT1-192.168.0.0/16"] will be created
+  + resource "aws_route" "tgw_routes" {
+      + destination_cidr_block = "192.168.0.0/16"
+      + id                     = (known after apply)
+      + instance_id            = (known after apply)
+      + instance_owner_id      = (known after apply)
+      + network_interface_id   = (known after apply)
+      + origin                 = (known after apply)
+      + region                 = "us-west-2"
+      + route_table_id         = (known after apply)
+      + state                  = (known after apply)
+      + transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+  # module.route_tables.aws_route.tgw_routes["C-TGW1-10.0.0.0/8"] will be created
+  + resource "aws_route" "tgw_routes" {
+      + destination_cidr_block = "10.0.0.0/8"
+      + id                     = (known after apply)
+      + instance_id            = (known after apply)
+      + instance_owner_id      = (known after apply)
+      + network_interface_id   = (known after apply)
+      + origin                 = (known after apply)
+      + region                 = "us-west-2"
+      + route_table_id         = (known after apply)
+      + state                  = (known after apply)
+      + transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+  # module.route_tables.aws_route.tgw_routes["C-TGW1-172.16.0.0/12"] will be created
+  + resource "aws_route" "tgw_routes" {
+      + destination_cidr_block = "172.16.0.0/12"
+      + id                     = (known after apply)
+      + instance_id            = (known after apply)
+      + instance_owner_id      = (known after apply)
+      + network_interface_id   = (known after apply)
+      + origin                 = (known after apply)
+      + region                 = "us-west-2"
+      + route_table_id         = (known after apply)
+      + state                  = (known after apply)
+      + transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+  # module.route_tables.aws_route.tgw_routes["C-TGW1-192.168.0.0/16"] will be created
+  + resource "aws_route" "tgw_routes" {
+      + destination_cidr_block = "192.168.0.0/16"
+      + id                     = (known after apply)
+      + instance_id            = (known after apply)
+      + instance_owner_id      = (known after apply)
+      + network_interface_id   = (known after apply)
+      + origin                 = (known after apply)
+      + region                 = "us-west-2"
+      + route_table_id         = (known after apply)
+      + state                  = (known after apply)
+      + transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+  # module.route_tables.aws_route_table.rt["A-APP1"] must be replaced
+-/+ resource "aws_route_table" "rt" {
+      ~ arn              = "arn:aws:ec2:us-west-2:158711196263:route-table/rtb-057d21a72828f523b" -> (known after apply)
+      ~ id               = "rtb-057d21a72828f523b" -> (known after apply)
+      ~ owner_id         = "158711196263" -> (known after apply)
+      ~ propagating_vgws = [] -> (known after apply)
+      ~ route            = [] -> (known after apply)
+        tags             = {
+            "Name" = "RT-NADTC04-A-DATA-CONSUMER-DEV-APP1"
+        }
+      ~ vpc_id           = "vpc-0c9469945f82a6cf4" # forces replacement -> (known after apply) # forces replacement
+        # (2 unchanged attributes hidden)
+    }
+
+  # module.route_tables.aws_route_table.rt["A-MGMT1"] must be replaced
+-/+ resource "aws_route_table" "rt" {
+      ~ arn              = "arn:aws:ec2:us-west-2:158711196263:route-table/rtb-0f0cc9e8d288b8136" -> (known after apply)
+      ~ id               = "rtb-0f0cc9e8d288b8136" -> (known after apply)
+      ~ owner_id         = "158711196263" -> (known after apply)
+      ~ propagating_vgws = [] -> (known after apply)
+      ~ route            = [] -> (known after apply)
+        tags             = {
+            "Name" = "RT-NADTC04-A-DATA-CONSUMER-DEV-MGMT1"
+        }
+      ~ vpc_id           = "vpc-0c9469945f82a6cf4" # forces replacement -> (known after apply) # forces replacement
+        # (2 unchanged attributes hidden)
+    }
+
+  # module.route_tables.aws_route_table.rt["A-TGW1"] must be replaced
+-/+ resource "aws_route_table" "rt" {
+      ~ arn              = "arn:aws:ec2:us-west-2:158711196263:route-table/rtb-0c3fe7ba62e48a606" -> (known after apply)
+      ~ id               = "rtb-0c3fe7ba62e48a606" -> (known after apply)
+      ~ owner_id         = "158711196263" -> (known after apply)
+      ~ propagating_vgws = [] -> (known after apply)
+      ~ route            = [] -> (known after apply)
+        tags             = {
+            "Name" = "RT-NADTC04-A-DATA-CONSUMER-DEV-TGW1"
+        }
+      ~ vpc_id           = "vpc-0c9469945f82a6cf4" # forces replacement -> (known after apply) # forces replacement
+        # (2 unchanged attributes hidden)
+    }
+
+  # module.route_tables.aws_route_table.rt["B-APP1"] must be replaced
+-/+ resource "aws_route_table" "rt" {
+      ~ arn              = "arn:aws:ec2:us-west-2:158711196263:route-table/rtb-08f247143a40ad2da" -> (known after apply)
+      ~ id               = "rtb-08f247143a40ad2da" -> (known after apply)
+      ~ owner_id         = "158711196263" -> (known after apply)
+      ~ propagating_vgws = [] -> (known after apply)
+      ~ route            = [] -> (known after apply)
+        tags             = {
+            "Name" = "RT-NADTC04-B-DATA-CONSUMER-DEV-APP1"
+        }
+      ~ vpc_id           = "vpc-0c9469945f82a6cf4" # forces replacement -> (known after apply) # forces replacement
+        # (2 unchanged attributes hidden)
+    }
+
+  # module.route_tables.aws_route_table.rt["B-MGMT1"] must be replaced
+-/+ resource "aws_route_table" "rt" {
+      ~ arn              = "arn:aws:ec2:us-west-2:158711196263:route-table/rtb-098cb232ccc57b612" -> (known after apply)
+      ~ id               = "rtb-098cb232ccc57b612" -> (known after apply)
+      ~ owner_id         = "158711196263" -> (known after apply)
+      ~ propagating_vgws = [] -> (known after apply)
+      ~ route            = [] -> (known after apply)
+        tags             = {
+            "Name" = "RT-NADTC04-B-DATA-CONSUMER-DEV-MGMT1"
+        }
+      ~ vpc_id           = "vpc-0c9469945f82a6cf4" # forces replacement -> (known after apply) # forces replacement
+        # (2 unchanged attributes hidden)
+    }
+
+  # module.route_tables.aws_route_table.rt["B-TGW1"] must be replaced
+-/+ resource "aws_route_table" "rt" {
+      ~ arn              = "arn:aws:ec2:us-west-2:158711196263:route-table/rtb-07f7122a21d89c13d" -> (known after apply)
+      ~ id               = "rtb-07f7122a21d89c13d" -> (known after apply)
+      ~ owner_id         = "158711196263" -> (known after apply)
+      ~ propagating_vgws = [] -> (known after apply)
+      ~ route            = [] -> (known after apply)
+        tags             = {
+            "Name" = "RT-NADTC04-B-DATA-CONSUMER-DEV-TGW1"
+        }
+      ~ vpc_id           = "vpc-0c9469945f82a6cf4" # forces replacement -> (known after apply) # forces replacement
+        # (2 unchanged attributes hidden)
+    }
+
+  # module.route_tables.aws_route_table.rt["C-APP1"] must be replaced
+-/+ resource "aws_route_table" "rt" {
+      ~ arn              = "arn:aws:ec2:us-west-2:158711196263:route-table/rtb-044cb080809f54454" -> (known after apply)
+      ~ id               = "rtb-044cb080809f54454" -> (known after apply)
+      ~ owner_id         = "158711196263" -> (known after apply)
+      ~ propagating_vgws = [] -> (known after apply)
+      ~ route            = [] -> (known after apply)
+        tags             = {
+            "Name" = "RT-NADTC04-C-DATA-CONSUMER-DEV-APP1"
+        }
+      ~ vpc_id           = "vpc-0c9469945f82a6cf4" # forces replacement -> (known after apply) # forces replacement
+        # (2 unchanged attributes hidden)
+    }
+
+  # module.route_tables.aws_route_table.rt["C-MGMT1"] must be replaced
+-/+ resource "aws_route_table" "rt" {
+      ~ arn              = "arn:aws:ec2:us-west-2:158711196263:route-table/rtb-05b6765289bcb6042" -> (known after apply)
+      ~ id               = "rtb-05b6765289bcb6042" -> (known after apply)
+      ~ owner_id         = "158711196263" -> (known after apply)
+      ~ propagating_vgws = [] -> (known after apply)
+      ~ route            = [] -> (known after apply)
+        tags             = {
+            "Name" = "RT-NADTC04-C-DATA-CONSUMER-DEV-MGMT1"
+        }
+      ~ vpc_id           = "vpc-0c9469945f82a6cf4" # forces replacement -> (known after apply) # forces replacement
+        # (2 unchanged attributes hidden)
+    }
+
+  # module.route_tables.aws_route_table.rt["C-TGW1"] must be replaced
+-/+ resource "aws_route_table" "rt" {
+      ~ arn              = "arn:aws:ec2:us-west-2:158711196263:route-table/rtb-0fc61d820b87601c4" -> (known after apply)
+      ~ id               = "rtb-0fc61d820b87601c4" -> (known after apply)
+      ~ owner_id         = "158711196263" -> (known after apply)
+      ~ propagating_vgws = [] -> (known after apply)
+      ~ route            = [] -> (known after apply)
+        tags             = {
+            "Name" = "RT-NADTC04-C-DATA-CONSUMER-DEV-TGW1"
+        }
+      ~ vpc_id           = "vpc-0c9469945f82a6cf4" # forces replacement -> (known after apply) # forces replacement
+        # (2 unchanged attributes hidden)
+    }
+
+  # module.route_tables.aws_route_table_association.assoc["A-APP1"] must be replaced
+-/+ resource "aws_route_table_association" "assoc" {
+      ~ id             = "rtbassoc-0bf872970ef12a153" -> (known after apply)
+      ~ route_table_id = "rtb-057d21a72828f523b" -> (known after apply)
+      ~ subnet_id      = "subnet-07c2112b78da20004" # forces replacement -> (known after apply) # forces replacement
+        # (2 unchanged attributes hidden)
+    }
+
+  # module.route_tables.aws_route_table_association.assoc["A-MGMT1"] must be replaced
+-/+ resource "aws_route_table_association" "assoc" {
+      ~ id             = "rtbassoc-0d7f2b70338cf6e0b" -> (known after apply)
+      ~ route_table_id = "rtb-0f0cc9e8d288b8136" -> (known after apply)
+      ~ subnet_id      = "subnet-0bf826ea5fed214c7" # forces replacement -> (known after apply) # forces replacement
+        # (2 unchanged attributes hidden)
+    }
+
+  # module.route_tables.aws_route_table_association.assoc["A-TGW1"] must be replaced
+-/+ resource "aws_route_table_association" "assoc" {
+      ~ id             = "rtbassoc-0ba6b07f8f3425e10" -> (known after apply)
+      ~ route_table_id = "rtb-0c3fe7ba62e48a606" -> (known after apply)
+      ~ subnet_id      = "subnet-0ce78257bde819993" # forces replacement -> (known after apply) # forces replacement
+        # (2 unchanged attributes hidden)
+    }
+
+  # module.route_tables.aws_route_table_association.assoc["B-APP1"] must be replaced
+-/+ resource "aws_route_table_association" "assoc" {
+      ~ id             = "rtbassoc-0e73117b41f55d80e" -> (known after apply)
+      ~ route_table_id = "rtb-08f247143a40ad2da" -> (known after apply)
+      ~ subnet_id      = "subnet-0184423dde8c008d8" # forces replacement -> (known after apply) # forces replacement
+        # (2 unchanged attributes hidden)
+    }
+
+  # module.route_tables.aws_route_table_association.assoc["B-MGMT1"] must be replaced
+-/+ resource "aws_route_table_association" "assoc" {
+      ~ id             = "rtbassoc-0500d116a2e40637b" -> (known after apply)
+      ~ route_table_id = "rtb-098cb232ccc57b612" -> (known after apply)
+      ~ subnet_id      = "subnet-08b31354aa4d85906" # forces replacement -> (known after apply) # forces replacement
+        # (2 unchanged attributes hidden)
+    }
+
+  # module.route_tables.aws_route_table_association.assoc["B-TGW1"] must be replaced
+-/+ resource "aws_route_table_association" "assoc" {
+      ~ id             = "rtbassoc-010e5b02b1b8f032c" -> (known after apply)
+      ~ route_table_id = "rtb-07f7122a21d89c13d" -> (known after apply)
+      ~ subnet_id      = "subnet-052ab1d2d94c841cc" # forces replacement -> (known after apply) # forces replacement
+        # (2 unchanged attributes hidden)
+    }
+
+  # module.route_tables.aws_route_table_association.assoc["C-APP1"] must be replaced
+-/+ resource "aws_route_table_association" "assoc" {
+      ~ id             = "rtbassoc-01e201575f2bd0026" -> (known after apply)
+      ~ route_table_id = "rtb-044cb080809f54454" -> (known after apply)
+      ~ subnet_id      = "subnet-00fb098d99db6ff7c" # forces replacement -> (known after apply) # forces replacement
+        # (2 unchanged attributes hidden)
+    }
+
+  # module.route_tables.aws_route_table_association.assoc["C-MGMT1"] must be replaced
+-/+ resource "aws_route_table_association" "assoc" {
+      ~ id             = "rtbassoc-07083c7bfba79fd4a" -> (known after apply)
+      ~ route_table_id = "rtb-05b6765289bcb6042" -> (known after apply)
+      ~ subnet_id      = "subnet-0cc2cad9c32218831" # forces replacement -> (known after apply) # forces replacement
+        # (2 unchanged attributes hidden)
+    }
+
+  # module.route_tables.aws_route_table_association.assoc["C-TGW1"] must be replaced
+-/+ resource "aws_route_table_association" "assoc" {
+      ~ id             = "rtbassoc-00114762a1f6e1e8b" -> (known after apply)
+      ~ route_table_id = "rtb-0fc61d820b87601c4" -> (known after apply)
+      ~ subnet_id      = "subnet-056a1a0b7a1fd0507" # forces replacement -> (known after apply) # forces replacement
+        # (2 unchanged attributes hidden)
+    }
+
+  # module.subnets.aws_subnet.this["10.128.12.0/26"] will be destroyed
+  # (because key ["10.128.12.0/26"] is not in for_each map)
+  - resource "aws_subnet" "this" {
+      - arn                                            = "arn:aws:ec2:us-west-2:158711196263:subnet/subnet-07c2112b78da20004" -> null
+      - assign_ipv6_address_on_creation                = false -> null
+      - availability_zone                              = "us-west-2a" -> null
+      - availability_zone_id                           = "usw2-az2" -> null
+      - cidr_block                                     = "10.128.12.0/26" -> null
+      - enable_dns64                                   = false -> null
+      - enable_lni_at_device_index                     = 0 -> null
+      - enable_resource_name_dns_a_record_on_launch    = false -> null
+      - enable_resource_name_dns_aaaa_record_on_launch = false -> null
+      - id                                             = "subnet-07c2112b78da20004" -> null
+      - ipv6_native                                    = false -> null
+      - map_customer_owned_ip_on_launch                = false -> null
+      - map_public_ip_on_launch                        = false -> null
+      - owner_id                                       = "158711196263" -> null
+      - private_dns_hostname_type_on_launch            = "ip-name" -> null
+      - region                                         = "us-west-2" -> null
+      - tags                                           = {
+          - "Name" = "SUB-NADTC04-A-DATA-CONSUMER-DEV-INT-APP1"
+        } -> null
+      - tags_all                                       = {
+          - "Name" = "SUB-NADTC04-A-DATA-CONSUMER-DEV-INT-APP1"
+        } -> null
+      - vpc_id                                         = "vpc-0c9469945f82a6cf4" -> null
+        # (4 unchanged attributes hidden)
+    }
+
+  # module.subnets.aws_subnet.this["10.128.12.128/26"] will be destroyed
+  # (because key ["10.128.12.128/26"] is not in for_each map)
+  - resource "aws_subnet" "this" {
+      - arn                                            = "arn:aws:ec2:us-west-2:158711196263:subnet/subnet-00fb098d99db6ff7c" -> null
+      - assign_ipv6_address_on_creation                = false -> null
+      - availability_zone                              = "us-west-2c" -> null
+      - availability_zone_id                           = "usw2-az3" -> null
+      - cidr_block                                     = "10.128.12.128/26" -> null
+      - enable_dns64                                   = false -> null
+      - enable_lni_at_device_index                     = 0 -> null
+      - enable_resource_name_dns_a_record_on_launch    = false -> null
+      - enable_resource_name_dns_aaaa_record_on_launch = false -> null
+      - id                                             = "subnet-00fb098d99db6ff7c" -> null
+      - ipv6_native                                    = false -> null
+      - map_customer_owned_ip_on_launch                = false -> null
+      - map_public_ip_on_launch                        = false -> null
+      - owner_id                                       = "158711196263" -> null
+      - private_dns_hostname_type_on_launch            = "ip-name" -> null
+      - region                                         = "us-west-2" -> null
+      - tags                                           = {
+          - "Name" = "SUB-NADTC04-C-DATA-CONSUMER-DEV-INT-APP1"
+        } -> null
+      - tags_all                                       = {
+          - "Name" = "SUB-NADTC04-C-DATA-CONSUMER-DEV-INT-APP1"
+        } -> null
+      - vpc_id                                         = "vpc-0c9469945f82a6cf4" -> null
+        # (4 unchanged attributes hidden)
+    }
+
+  # module.subnets.aws_subnet.this["10.128.12.192/27"] will be destroyed
+  # (because key ["10.128.12.192/27"] is not in for_each map)
+  - resource "aws_subnet" "this" {
+      - arn                                            = "arn:aws:ec2:us-west-2:158711196263:subnet/subnet-0bf826ea5fed214c7" -> null
+      - assign_ipv6_address_on_creation                = false -> null
+      - availability_zone                              = "us-west-2a" -> null
+      - availability_zone_id                           = "usw2-az2" -> null
+      - cidr_block                                     = "10.128.12.192/27" -> null
+      - enable_dns64                                   = false -> null
+      - enable_lni_at_device_index                     = 0 -> null
+      - enable_resource_name_dns_a_record_on_launch    = false -> null
+      - enable_resource_name_dns_aaaa_record_on_launch = false -> null
+      - id                                             = "subnet-0bf826ea5fed214c7" -> null
+      - ipv6_native                                    = false -> null
+      - map_customer_owned_ip_on_launch                = false -> null
+      - map_public_ip_on_launch                        = false -> null
+      - owner_id                                       = "158711196263" -> null
+      - private_dns_hostname_type_on_launch            = "ip-name" -> null
+      - region                                         = "us-west-2" -> null
+      - tags                                           = {
+          - "Name" = "SUB-NADTC04-A-DATA-CONSUMER-DEV-INT-MGMT1"
+        } -> null
+      - tags_all                                       = {
+          - "Name" = "SUB-NADTC04-A-DATA-CONSUMER-DEV-INT-MGMT1"
+        } -> null
+      - vpc_id                                         = "vpc-0c9469945f82a6cf4" -> null
+        # (4 unchanged attributes hidden)
+    }
+
+  # module.subnets.aws_subnet.this["10.128.12.224/27"] will be destroyed
+  # (because key ["10.128.12.224/27"] is not in for_each map)
+  - resource "aws_subnet" "this" {
+      - arn                                            = "arn:aws:ec2:us-west-2:158711196263:subnet/subnet-08b31354aa4d85906" -> null
+      - assign_ipv6_address_on_creation                = false -> null
+      - availability_zone                              = "us-west-2b" -> null
+      - availability_zone_id                           = "usw2-az1" -> null
+      - cidr_block                                     = "10.128.12.224/27" -> null
+      - enable_dns64                                   = false -> null
+      - enable_lni_at_device_index                     = 0 -> null
+      - enable_resource_name_dns_a_record_on_launch    = false -> null
+      - enable_resource_name_dns_aaaa_record_on_launch = false -> null
+      - id                                             = "subnet-08b31354aa4d85906" -> null
+      - ipv6_native                                    = false -> null
+      - map_customer_owned_ip_on_launch                = false -> null
+      - map_public_ip_on_launch                        = false -> null
+      - owner_id                                       = "158711196263" -> null
+      - private_dns_hostname_type_on_launch            = "ip-name" -> null
+      - region                                         = "us-west-2" -> null
+      - tags                                           = {
+          - "Name" = "SUB-NADTC04-B-DATA-CONSUMER-DEV-INT-MGMT1"
+        } -> null
+      - tags_all                                       = {
+          - "Name" = "SUB-NADTC04-B-DATA-CONSUMER-DEV-INT-MGMT1"
+        } -> null
+      - vpc_id                                         = "vpc-0c9469945f82a6cf4" -> null
+        # (4 unchanged attributes hidden)
+    }
+
+  # module.subnets.aws_subnet.this["10.128.12.64/26"] will be destroyed
+  # (because key ["10.128.12.64/26"] is not in for_each map)
+  - resource "aws_subnet" "this" {
+      - arn                                            = "arn:aws:ec2:us-west-2:158711196263:subnet/subnet-0184423dde8c008d8" -> null
+      - assign_ipv6_address_on_creation                = false -> null
+      - availability_zone                              = "us-west-2b" -> null
+      - availability_zone_id                           = "usw2-az1" -> null
+      - cidr_block                                     = "10.128.12.64/26" -> null
+      - enable_dns64                                   = false -> null
+      - enable_lni_at_device_index                     = 0 -> null
+      - enable_resource_name_dns_a_record_on_launch    = false -> null
+      - enable_resource_name_dns_aaaa_record_on_launch = false -> null
+      - id                                             = "subnet-0184423dde8c008d8" -> null
+      - ipv6_native                                    = false -> null
+      - map_customer_owned_ip_on_launch                = false -> null
+      - map_public_ip_on_launch                        = false -> null
+      - owner_id                                       = "158711196263" -> null
+      - private_dns_hostname_type_on_launch            = "ip-name" -> null
+      - region                                         = "us-west-2" -> null
+      - tags                                           = {
+          - "Name" = "SUB-NADTC04-B-DATA-CONSUMER-DEV-INT-APP1"
+        } -> null
+      - tags_all                                       = {
+          - "Name" = "SUB-NADTC04-B-DATA-CONSUMER-DEV-INT-APP1"
+        } -> null
+      - vpc_id                                         = "vpc-0c9469945f82a6cf4" -> null
+        # (4 unchanged attributes hidden)
+    }
+
+  # module.subnets.aws_subnet.this["10.128.13.0/27"] will be destroyed
+  # (because key ["10.128.13.0/27"] is not in for_each map)
+  - resource "aws_subnet" "this" {
+      - arn                                            = "arn:aws:ec2:us-west-2:158711196263:subnet/subnet-0cc2cad9c32218831" -> null
+      - assign_ipv6_address_on_creation                = false -> null
+      - availability_zone                              = "us-west-2c" -> null
+      - availability_zone_id                           = "usw2-az3" -> null
+      - cidr_block                                     = "10.128.13.0/27" -> null
+      - enable_dns64                                   = false -> null
+      - enable_lni_at_device_index                     = 0 -> null
+      - enable_resource_name_dns_a_record_on_launch    = false -> null
+      - enable_resource_name_dns_aaaa_record_on_launch = false -> null
+      - id                                             = "subnet-0cc2cad9c32218831" -> null
+      - ipv6_native                                    = false -> null
+      - map_customer_owned_ip_on_launch                = false -> null
+      - map_public_ip_on_launch                        = false -> null
+      - owner_id                                       = "158711196263" -> null
+      - private_dns_hostname_type_on_launch            = "ip-name" -> null
+      - region                                         = "us-west-2" -> null
+      - tags                                           = {
+          - "Name" = "SUB-NADTC04-C-DATA-CONSUMER-DEV-INT-MGMT1"
+        } -> null
+      - tags_all                                       = {
+          - "Name" = "SUB-NADTC04-C-DATA-CONSUMER-DEV-INT-MGMT1"
+        } -> null
+      - vpc_id                                         = "vpc-0c9469945f82a6cf4" -> null
+        # (4 unchanged attributes hidden)
+    }
+
+  # module.subnets.aws_subnet.this["10.128.13.32/28"] will be destroyed
+  # (because key ["10.128.13.32/28"] is not in for_each map)
+  - resource "aws_subnet" "this" {
+      - arn                                            = "arn:aws:ec2:us-west-2:158711196263:subnet/subnet-0ce78257bde819993" -> null
+      - assign_ipv6_address_on_creation                = false -> null
+      - availability_zone                              = "us-west-2a" -> null
+      - availability_zone_id                           = "usw2-az2" -> null
+      - cidr_block                                     = "10.128.13.32/28" -> null
+      - enable_dns64                                   = false -> null
+      - enable_lni_at_device_index                     = 0 -> null
+      - enable_resource_name_dns_a_record_on_launch    = false -> null
+      - enable_resource_name_dns_aaaa_record_on_launch = false -> null
+      - id                                             = "subnet-0ce78257bde819993" -> null
+      - ipv6_native                                    = false -> null
+      - map_customer_owned_ip_on_launch                = false -> null
+      - map_public_ip_on_launch                        = false -> null
+      - owner_id                                       = "158711196263" -> null
+      - private_dns_hostname_type_on_launch            = "ip-name" -> null
+      - region                                         = "us-west-2" -> null
+      - tags                                           = {
+          - "Name" = "SUB-NADTC04-A-DATA-CONSUMER-DEV-INT-TGW1"
+        } -> null
+      - tags_all                                       = {
+          - "Name" = "SUB-NADTC04-A-DATA-CONSUMER-DEV-INT-TGW1"
+        } -> null
+      - vpc_id                                         = "vpc-0c9469945f82a6cf4" -> null
+        # (4 unchanged attributes hidden)
+    }
+
+  # module.subnets.aws_subnet.this["10.128.13.48/28"] will be destroyed
+  # (because key ["10.128.13.48/28"] is not in for_each map)
+  - resource "aws_subnet" "this" {
+      - arn                                            = "arn:aws:ec2:us-west-2:158711196263:subnet/subnet-052ab1d2d94c841cc" -> null
+      - assign_ipv6_address_on_creation                = false -> null
+      - availability_zone                              = "us-west-2b" -> null
+      - availability_zone_id                           = "usw2-az1" -> null
+      - cidr_block                                     = "10.128.13.48/28" -> null
+      - enable_dns64                                   = false -> null
+      - enable_lni_at_device_index                     = 0 -> null
+      - enable_resource_name_dns_a_record_on_launch    = false -> null
+      - enable_resource_name_dns_aaaa_record_on_launch = false -> null
+      - id                                             = "subnet-052ab1d2d94c841cc" -> null
+      - ipv6_native                                    = false -> null
+      - map_customer_owned_ip_on_launch                = false -> null
+      - map_public_ip_on_launch                        = false -> null
+      - owner_id                                       = "158711196263" -> null
+      - private_dns_hostname_type_on_launch            = "ip-name" -> null
+      - region                                         = "us-west-2" -> null
+      - tags                                           = {
+          - "Name" = "SUB-NADTC04-B-DATA-CONSUMER-DEV-INT-TGW1"
+        } -> null
+      - tags_all                                       = {
+          - "Name" = "SUB-NADTC04-B-DATA-CONSUMER-DEV-INT-TGW1"
+        } -> null
+      - vpc_id                                         = "vpc-0c9469945f82a6cf4" -> null
+        # (4 unchanged attributes hidden)
+    }
+
+  # module.subnets.aws_subnet.this["10.128.13.64/28"] will be destroyed
+  # (because key ["10.128.13.64/28"] is not in for_each map)
+  - resource "aws_subnet" "this" {
+      - arn                                            = "arn:aws:ec2:us-west-2:158711196263:subnet/subnet-056a1a0b7a1fd0507" -> null
+      - assign_ipv6_address_on_creation                = false -> null
+      - availability_zone                              = "us-west-2c" -> null
+      - availability_zone_id                           = "usw2-az3" -> null
+      - cidr_block                                     = "10.128.13.64/28" -> null
+      - enable_dns64                                   = false -> null
+      - enable_lni_at_device_index                     = 0 -> null
+      - enable_resource_name_dns_a_record_on_launch    = false -> null
+      - enable_resource_name_dns_aaaa_record_on_launch = false -> null
+      - id                                             = "subnet-056a1a0b7a1fd0507" -> null
+      - ipv6_native                                    = false -> null
+      - map_customer_owned_ip_on_launch                = false -> null
+      - map_public_ip_on_launch                        = false -> null
+      - owner_id                                       = "158711196263" -> null
+      - private_dns_hostname_type_on_launch            = "ip-name" -> null
+      - region                                         = "us-west-2" -> null
+      - tags                                           = {
+          - "Name" = "SUB-NADTC04-C-DATA-CONSUMER-DEV-INT-TGW1"
+        } -> null
+      - tags_all                                       = {
+          - "Name" = "SUB-NADTC04-C-DATA-CONSUMER-DEV-INT-TGW1"
+        } -> null
+      - vpc_id                                         = "vpc-0c9469945f82a6cf4" -> null
+        # (4 unchanged attributes hidden)
+    }
+
+  # module.subnets.aws_subnet.this["10.128.16.0/26"] will be created
+  + resource "aws_subnet" "this" {
+      + arn                                            = (known after apply)
+      + assign_ipv6_address_on_creation                = false
+      + availability_zone                              = "us-west-2a"
+      + availability_zone_id                           = (known after apply)
+      + cidr_block                                     = "10.128.16.0/26"
+      + enable_dns64                                   = false
+      + enable_resource_name_dns_a_record_on_launch    = false
+      + enable_resource_name_dns_aaaa_record_on_launch = false
+      + id                                             = (known after apply)
+      + ipv6_cidr_block                                = (known after apply)
+      + ipv6_cidr_block_association_id                 = (known after apply)
+      + ipv6_native                                    = false
+      + map_public_ip_on_launch                        = false
+      + owner_id                                       = (known after apply)
+      + private_dns_hostname_type_on_launch            = (known after apply)
+      + region                                         = "us-west-2"
+      + tags                                           = {
+          + "Name" = "SUB-NADTC04-A-DATA-CONSUMER-DEV-INT-APP1"
+        }
+      + tags_all                                       = {
+          + "Name" = "SUB-NADTC04-A-DATA-CONSUMER-DEV-INT-APP1"
+        }
+      + vpc_id                                         = (known after apply)
+    }
+
+  # module.subnets.aws_subnet.this["10.128.16.128/26"] will be created
+  + resource "aws_subnet" "this" {
+      + arn                                            = (known after apply)
+      + assign_ipv6_address_on_creation                = false
+      + availability_zone                              = "us-west-2c"
+      + availability_zone_id                           = (known after apply)
+      + cidr_block                                     = "10.128.16.128/26"
+      + enable_dns64                                   = false
+      + enable_resource_name_dns_a_record_on_launch    = false
+      + enable_resource_name_dns_aaaa_record_on_launch = false
+      + id                                             = (known after apply)
+      + ipv6_cidr_block                                = (known after apply)
+      + ipv6_cidr_block_association_id                 = (known after apply)
+      + ipv6_native                                    = false
+      + map_public_ip_on_launch                        = false
+      + owner_id                                       = (known after apply)
+      + private_dns_hostname_type_on_launch            = (known after apply)
+      + region                                         = "us-west-2"
+      + tags                                           = {
+          + "Name" = "SUB-NADTC04-C-DATA-CONSUMER-DEV-INT-APP1"
+        }
+      + tags_all                                       = {
+          + "Name" = "SUB-NADTC04-C-DATA-CONSUMER-DEV-INT-APP1"
+        }
+      + vpc_id                                         = (known after apply)
+    }
+
+  # module.subnets.aws_subnet.this["10.128.16.192/27"] will be created
+  + resource "aws_subnet" "this" {
+      + arn                                            = (known after apply)
+      + assign_ipv6_address_on_creation                = false
+      + availability_zone                              = "us-west-2a"
+      + availability_zone_id                           = (known after apply)
+      + cidr_block                                     = "10.128.16.192/27"
+      + enable_dns64                                   = false
+      + enable_resource_name_dns_a_record_on_launch    = false
+      + enable_resource_name_dns_aaaa_record_on_launch = false
+      + id                                             = (known after apply)
+      + ipv6_cidr_block                                = (known after apply)
+      + ipv6_cidr_block_association_id                 = (known after apply)
+      + ipv6_native                                    = false
+      + map_public_ip_on_launch                        = false
+      + owner_id                                       = (known after apply)
+      + private_dns_hostname_type_on_launch            = (known after apply)
+      + region                                         = "us-west-2"
+      + tags                                           = {
+          + "Name" = "SUB-NADTC04-A-DATA-CONSUMER-DEV-INT-MGMT1"
+        }
+      + tags_all                                       = {
+          + "Name" = "SUB-NADTC04-A-DATA-CONSUMER-DEV-INT-MGMT1"
+        }
+      + vpc_id                                         = (known after apply)
+    }
+
+  # module.subnets.aws_subnet.this["10.128.16.224/27"] will be created
+  + resource "aws_subnet" "this" {
+      + arn                                            = (known after apply)
+      + assign_ipv6_address_on_creation                = false
+      + availability_zone                              = "us-west-2b"
+      + availability_zone_id                           = (known after apply)
+      + cidr_block                                     = "10.128.16.224/27"
+      + enable_dns64                                   = false
+      + enable_resource_name_dns_a_record_on_launch    = false
+      + enable_resource_name_dns_aaaa_record_on_launch = false
+      + id                                             = (known after apply)
+      + ipv6_cidr_block                                = (known after apply)
+      + ipv6_cidr_block_association_id                 = (known after apply)
+      + ipv6_native                                    = false
+      + map_public_ip_on_launch                        = false
+      + owner_id                                       = (known after apply)
+      + private_dns_hostname_type_on_launch            = (known after apply)
+      + region                                         = "us-west-2"
+      + tags                                           = {
+          + "Name" = "SUB-NADTC04-B-DATA-CONSUMER-DEV-INT-MGMT1"
+        }
+      + tags_all                                       = {
+          + "Name" = "SUB-NADTC04-B-DATA-CONSUMER-DEV-INT-MGMT1"
+        }
+      + vpc_id                                         = (known after apply)
+    }
+
+  # module.subnets.aws_subnet.this["10.128.16.64/26"] will be created
+  + resource "aws_subnet" "this" {
+      + arn                                            = (known after apply)
+      + assign_ipv6_address_on_creation                = false
+      + availability_zone                              = "us-west-2b"
+      + availability_zone_id                           = (known after apply)
+      + cidr_block                                     = "10.128.16.64/26"
+      + enable_dns64                                   = false
+      + enable_resource_name_dns_a_record_on_launch    = false
+      + enable_resource_name_dns_aaaa_record_on_launch = false
+      + id                                             = (known after apply)
+      + ipv6_cidr_block                                = (known after apply)
+      + ipv6_cidr_block_association_id                 = (known after apply)
+      + ipv6_native                                    = false
+      + map_public_ip_on_launch                        = false
+      + owner_id                                       = (known after apply)
+      + private_dns_hostname_type_on_launch            = (known after apply)
+      + region                                         = "us-west-2"
+      + tags                                           = {
+          + "Name" = "SUB-NADTC04-B-DATA-CONSUMER-DEV-INT-APP1"
+        }
+      + tags_all                                       = {
+          + "Name" = "SUB-NADTC04-B-DATA-CONSUMER-DEV-INT-APP1"
+        }
+      + vpc_id                                         = (known after apply)
+    }
+
+  # module.subnets.aws_subnet.this["10.128.17.0/27"] will be created
+  + resource "aws_subnet" "this" {
+      + arn                                            = (known after apply)
+      + assign_ipv6_address_on_creation                = false
+      + availability_zone                              = "us-west-2c"
+      + availability_zone_id                           = (known after apply)
+      + cidr_block                                     = "10.128.17.0/27"
+      + enable_dns64                                   = false
+      + enable_resource_name_dns_a_record_on_launch    = false
+      + enable_resource_name_dns_aaaa_record_on_launch = false
+      + id                                             = (known after apply)
+      + ipv6_cidr_block                                = (known after apply)
+      + ipv6_cidr_block_association_id                 = (known after apply)
+      + ipv6_native                                    = false
+      + map_public_ip_on_launch                        = false
+      + owner_id                                       = (known after apply)
+      + private_dns_hostname_type_on_launch            = (known after apply)
+      + region                                         = "us-west-2"
+      + tags                                           = {
+          + "Name" = "SUB-NADTC04-C-DATA-CONSUMER-DEV-INT-MGMT1"
+        }
+      + tags_all                                       = {
+          + "Name" = "SUB-NADTC04-C-DATA-CONSUMER-DEV-INT-MGMT1"
+        }
+      + vpc_id                                         = (known after apply)
+    }
+
+  # module.subnets.aws_subnet.this["10.128.17.32/28"] will be created
+  + resource "aws_subnet" "this" {
+      + arn                                            = (known after apply)
+      + assign_ipv6_address_on_creation                = false
+      + availability_zone                              = "us-west-2a"
+      + availability_zone_id                           = (known after apply)
+      + cidr_block                                     = "10.128.17.32/28"
+      + enable_dns64                                   = false
+      + enable_resource_name_dns_a_record_on_launch    = false
+      + enable_resource_name_dns_aaaa_record_on_launch = false
+      + id                                             = (known after apply)
+      + ipv6_cidr_block                                = (known after apply)
+      + ipv6_cidr_block_association_id                 = (known after apply)
+      + ipv6_native                                    = false
+      + map_public_ip_on_launch                        = false
+      + owner_id                                       = (known after apply)
+      + private_dns_hostname_type_on_launch            = (known after apply)
+      + region                                         = "us-west-2"
+      + tags                                           = {
+          + "Name" = "SUB-NADTC04-A-DATA-CONSUMER-DEV-INT-TGW1"
+        }
+      + tags_all                                       = {
+          + "Name" = "SUB-NADTC04-A-DATA-CONSUMER-DEV-INT-TGW1"
+        }
+      + vpc_id                                         = (known after apply)
+    }
+
+  # module.subnets.aws_subnet.this["10.128.17.48/28"] will be created
+  + resource "aws_subnet" "this" {
+      + arn                                            = (known after apply)
+      + assign_ipv6_address_on_creation                = false
+      + availability_zone                              = "us-west-2b"
+      + availability_zone_id                           = (known after apply)
+      + cidr_block                                     = "10.128.17.48/28"
+      + enable_dns64                                   = false
+      + enable_resource_name_dns_a_record_on_launch    = false
+      + enable_resource_name_dns_aaaa_record_on_launch = false
+      + id                                             = (known after apply)
+      + ipv6_cidr_block                                = (known after apply)
+      + ipv6_cidr_block_association_id                 = (known after apply)
+      + ipv6_native                                    = false
+      + map_public_ip_on_launch                        = false
+      + owner_id                                       = (known after apply)
+      + private_dns_hostname_type_on_launch            = (known after apply)
+      + region                                         = "us-west-2"
+      + tags                                           = {
+          + "Name" = "SUB-NADTC04-B-DATA-CONSUMER-DEV-INT-TGW1"
+        }
+      + tags_all                                       = {
+          + "Name" = "SUB-NADTC04-B-DATA-CONSUMER-DEV-INT-TGW1"
+        }
+      + vpc_id                                         = (known after apply)
+    }
+
+  # module.subnets.aws_subnet.this["10.128.17.64/28"] will be created
+  + resource "aws_subnet" "this" {
+      + arn                                            = (known after apply)
+      + assign_ipv6_address_on_creation                = false
+      + availability_zone                              = "us-west-2c"
+      + availability_zone_id                           = (known after apply)
+      + cidr_block                                     = "10.128.17.64/28"
+      + enable_dns64                                   = false
+      + enable_resource_name_dns_a_record_on_launch    = false
+      + enable_resource_name_dns_aaaa_record_on_launch = false
+      + id                                             = (known after apply)
+      + ipv6_cidr_block                                = (known after apply)
+      + ipv6_cidr_block_association_id                 = (known after apply)
+      + ipv6_native                                    = false
+      + map_public_ip_on_launch                        = false
+      + owner_id                                       = (known after apply)
+      + private_dns_hostname_type_on_launch            = (known after apply)
+      + region                                         = "us-west-2"
+      + tags                                           = {
+          + "Name" = "SUB-NADTC04-C-DATA-CONSUMER-DEV-INT-TGW1"
+        }
+      + tags_all                                       = {
+          + "Name" = "SUB-NADTC04-C-DATA-CONSUMER-DEV-INT-TGW1"
+        }
+      + vpc_id                                         = (known after apply)
+    }
+
+  # module.tgw_attachment.aws_ec2_transit_gateway_vpc_attachment.this will be created
+  + resource "aws_ec2_transit_gateway_vpc_attachment" "this" {
+      + appliance_mode_support                          = "disable"
+      + arn                                             = (known after apply)
+      + dns_support                                     = "enable"
+      + id                                              = (known after apply)
+      + ipv6_support                                    = "disable"
+      + region                                          = "us-west-2"
+      + security_group_referencing_support              = (known after apply)
+      + subnet_ids                                      = (known after apply)
+      + tags                                            = {
+          + "Name" = "TGW-NADTC04-DATA-CONSUMER-DEV-INT-Attachment"
+        }
+      + tags_all                                        = {
+          + "Name" = "TGW-NADTC04-DATA-CONSUMER-DEV-INT-Attachment"
+        }
+      + transit_gateway_default_route_table_association = (known after apply)
+      + transit_gateway_default_route_table_propagation = (known after apply)
+      + transit_gateway_id                              = "tgw-0058b410c08c6789e"
+      + vpc_id                                          = (known after apply)
+      + vpc_owner_id                                    = (known after apply)
+    }
+
+  # module.vpc.aws_vpc.this must be replaced
+-/+ resource "aws_vpc" "this" {
+      ~ arn                                  = "arn:aws:ec2:us-west-2:158711196263:vpc/vpc-0c9469945f82a6cf4" -> (known after apply)
+      - assign_generated_ipv6_cidr_block     = false -> null
+      ~ cidr_block                           = "10.128.12.0/23" -> "10.128.16.0/23" # forces replacement
+      ~ default_network_acl_id               = "acl-0b8fd4954374bf673" -> (known after apply)
+      ~ default_route_table_id               = "rtb-0150f1f7cafd36d7c" -> (known after apply)
+      ~ default_security_group_id            = "sg-0f76c9c2c18a4644b" -> (known after apply)
+      ~ dhcp_options_id                      = "dopt-0c19d30a0a67ab993" -> (known after apply)
+      ~ enable_dns_hostnames                 = false -> true
+      ~ enable_network_address_usage_metrics = false -> (known after apply)
+      ~ id                                   = "vpc-0c9469945f82a6cf4" -> (known after apply)
+      + ipv6_association_id                  = (known after apply)
+      + ipv6_cidr_block                      = (known after apply)
+      + ipv6_cidr_block_network_border_group = (known after apply)
+      - ipv6_netmask_length                  = 0 -> null
+      ~ main_route_table_id                  = "rtb-0150f1f7cafd36d7c" -> (known after apply)
+      ~ owner_id                             = "158711196263" -> (known after apply)
+        tags                                 = {
+            "Name" = "VPC-NADTC04-DATA-CONSUMER-DEV-INT"
+        }
+        # (5 unchanged attributes hidden)
+    }
+
+  # module.vpc_flow_logs.aws_flow_log.vpc_flow_logs must be replaced
+-/+ resource "aws_flow_log" "vpc_flow_logs" {
+      ~ arn                        = "arn:aws:ec2:us-west-2:158711196263:vpc-flow-log/fl-04601d0dbd2a05a73" -> (known after apply)
+      ~ id                         = "fl-04601d0dbd2a05a73" -> (known after apply)
+      ~ log_format                 = "${version} ${account-id} ${interface-id} ${srcaddr} ${dstaddr} ${srcport} ${dstport} ${protocol} ${packets} ${bytes} ${start} ${end} ${action} ${log-status}" -> (known after apply)
+        tags                       = {
+            "Name" = "NADTC04-DATA-CONSUMER-DEV-INT-vpc-flow-logs"
+        }
+      ~ vpc_id                     = "vpc-0c9469945f82a6cf4" # forces replacement -> (known after apply) # forces replacement
+        # (8 unchanged attributes hidden)
+    }
+
+Plan: 57 to add, 0 to change, 29 to destroy.
+
+Changes to Outputs:
+  ~ vpc_id = "vpc-0c9469945f82a6cf4" -> (known after apply)

@@ -1,0 +1,1635 @@
+[0m[1mvar.des[0m
+  Allowed values: EXT or INT
+
+  [1mEnter a value:[0m [0m
+[0m[1mmodule.vpc_flow_logs.aws_iam_role.flow_logs_role: Refreshing state... [id=NADTC04-Data-Ingestion-EXT-vpc-flow-logs-role][0m
+[0m[1mmodule.vpc.aws_vpc.this: Refreshing state... [id=vpc-033cd5988ec6fc32f][0m
+[0m[1mmodule.vpc_flow_logs.aws_cloudwatch_log_group.flow_logs_group: Refreshing state... [id=nadtc04-data-ingestion-EXT-vpc-flow-logs][0m
+[0m[1mmodule.vpc_flow_logs.aws_iam_role_policy.flow_logs_inline_policy: Refreshing state... [id=NADTC04-Data-Ingestion-EXT-vpc-flow-logs-role:flow-logs-inline-policy][0m
+[0m[1mmodule.igw.aws_internet_gateway.this: Refreshing state... [id=igw-034ccd4bad89c1643][0m
+[0m[1mmodule.vpc_flow_logs.aws_flow_log.vpc_flow_logs: Refreshing state... [id=fl-0614de79503afe9e1][0m
+[0m[1mmodule.subnets.aws_subnet.this["10.128.10.0/26"]: Refreshing state... [id=subnet-0eecf62f4e6edde85][0m
+[0m[1mmodule.subnets.aws_subnet.this["10.128.10.64/26"]: Refreshing state... [id=subnet-062f52fc89bba1f35][0m
+[0m[1mmodule.subnets.aws_subnet.this["10.128.11.64/28"]: Refreshing state... [id=subnet-0464d156d7caa722d][0m
+[0m[1mmodule.subnets.aws_subnet.this["10.128.11.32/28"]: Refreshing state... [id=subnet-06c774e859f195ca1][0m
+[0m[1mmodule.subnets.aws_subnet.this["10.128.10.224/27"]: Refreshing state... [id=subnet-0740481afd8e5478e][0m
+[0m[1mmodule.subnets.aws_subnet.this["10.128.10.192/27"]: Refreshing state... [id=subnet-0ca588cf486d3d94f][0m
+[0m[1mmodule.subnets.aws_subnet.this["10.128.11.48/28"]: Refreshing state... [id=subnet-0e7bde1ef466fd5ad][0m
+[0m[1mmodule.subnets.aws_subnet.this["10.128.10.128/26"]: Refreshing state... [id=subnet-0d63bcec0ecbaada0][0m
+[0m[1mmodule.subnets.aws_subnet.this["10.128.11.0/27"]: Refreshing state... [id=subnet-085f4864fc41d3801][0m
+[0m[1mmodule.tgw_attachment.aws_ec2_transit_gateway_vpc_attachment.this: Refreshing state... [id=tgw-attach-0c6dfc113d7817e35][0m
+[0m[1mmodule.route_tables.aws_route_table.rt["SUB-NADTC04-B-Data-Ingestion-EXT-MGMT1"]: Refreshing state... [id=rtb-0fcd6f0996b2237bf][0m
+[0m[1mmodule.route_tables.aws_route_table.rt["SUB-NADTC04-B-Data-Ingestion-EXT-TGW1"]: Refreshing state... [id=rtb-0cb25a514d313e3db][0m
+[0m[1mmodule.route_tables.aws_route_table.rt["SUB-NADTC04-B-Data-Ingestion-EXT-APP1"]: Refreshing state... [id=rtb-0399cf30935f2a2a2][0m
+[0m[1mmodule.route_tables.aws_route_table.rt["SUB-NADTC04-C-Data-Ingestion-EXT-TGW1"]: Refreshing state... [id=rtb-0efdb4a3078d3d3a9][0m
+[0m[1mmodule.route_tables.aws_route_table.rt["SUB-NADTC04-C-Data-Ingestion-EXT-MGMT1"]: Refreshing state... [id=rtb-07342afb8d53c5e8c][0m
+[0m[1mmodule.route_tables.aws_route_table.rt["SUB-NADTC04-C-Data-Ingestion-EXT-APP1"]: Refreshing state... [id=rtb-00b6ba4a72894aa13][0m
+[0m[1mmodule.route_tables.aws_route_table.rt["SUB-NADTC04-A-Data-Ingestion-EXT-MGMT1"]: Refreshing state... [id=rtb-0a8d7d6bc329602d4][0m
+[0m[1mmodule.route_tables.aws_route_table.rt["SUB-NADTC04-A-Data-Ingestion-EXT-APP1"]: Refreshing state... [id=rtb-010d201c4258cb9d8][0m
+[0m[1mmodule.route_tables.aws_route_table.rt["SUB-NADTC04-A-Data-Ingestion-EXT-TGW1"]: Refreshing state... [id=rtb-0ac2024b798192ce6][0m
+[0m[1mmodule.route_tables.aws_route_table_association.assoc["SUB-NADTC04-A-Data-Ingestion-EXT-MGMT1"]: Refreshing state... [id=rtbassoc-0864d1452f31a706a][0m
+[0m[1mmodule.route_tables.aws_route_table_association.assoc["SUB-NADTC04-C-Data-Ingestion-EXT-APP1"]: Refreshing state... [id=rtbassoc-0f8290ae24ce31ee7][0m
+[0m[1mmodule.route_tables.aws_route_table_association.assoc["SUB-NADTC04-C-Data-Ingestion-EXT-TGW1"]: Refreshing state... [id=rtbassoc-0b74a374f7f748324][0m
+[0m[1mmodule.route_tables.aws_route_table_association.assoc["SUB-NADTC04-C-Data-Ingestion-EXT-MGMT1"]: Refreshing state... [id=rtbassoc-0b4f488befd08348d][0m
+[0m[1mmodule.route_tables.aws_route_table_association.assoc["SUB-NADTC04-B-Data-Ingestion-EXT-TGW1"]: Refreshing state... [id=rtbassoc-01fb994c3e3a84395][0m
+[0m[1mmodule.route_tables.aws_route_table_association.assoc["SUB-NADTC04-B-Data-Ingestion-EXT-APP1"]: Refreshing state... [id=rtbassoc-08f1338069f0df832][0m
+[0m[1mmodule.route_tables.aws_route_table_association.assoc["SUB-NADTC04-A-Data-Ingestion-EXT-APP1"]: Refreshing state... [id=rtbassoc-0c2bf584522664cf4][0m
+[0m[1mmodule.route_tables.aws_route_table_association.assoc["SUB-NADTC04-A-Data-Ingestion-EXT-TGW1"]: Refreshing state... [id=rtbassoc-017cf6efe03643116][0m
+[0m[1mmodule.route_tables.aws_route_table_association.assoc["SUB-NADTC04-B-Data-Ingestion-EXT-MGMT1"]: Refreshing state... [id=rtbassoc-00f6a4a732f314291][0m
+[0m[1mmodule.route_tables.aws_route.tgw_routes["SUB-NADTC04-B-Data-Ingestion-EXT-TGW1-192.168.0.0/16"]: Refreshing state... [id=r-rtb-0cb25a514d313e3db3901788224][0m
+[0m[1mmodule.route_tables.aws_route.tgw_routes["SUB-NADTC04-C-Data-Ingestion-EXT-MGMT1-172.16.0.0/12"]: Refreshing state... [id=r-rtb-07342afb8d53c5e8c3337197873][0m
+[0m[1mmodule.route_tables.aws_route.tgw_routes["SUB-NADTC04-B-Data-Ingestion-EXT-TGW1-10.0.0.0/8"]: Refreshing state... [id=r-rtb-0cb25a514d313e3db3423270202][0m
+[0m[1mmodule.route_tables.aws_route.tgw_routes["SUB-NADTC04-B-Data-Ingestion-EXT-MGMT1-10.0.0.0/8"]: Refreshing state... [id=r-rtb-0fcd6f0996b2237bf3423270202][0m
+[0m[1mmodule.route_tables.aws_route.tgw_routes["SUB-NADTC04-B-Data-Ingestion-EXT-APP1-172.16.0.0/12"]: Refreshing state... [id=r-rtb-0399cf30935f2a2a23337197873][0m
+[0m[1mmodule.route_tables.aws_route.tgw_routes["SUB-NADTC04-C-Data-Ingestion-EXT-APP1-192.168.0.0/16"]: Refreshing state... [id=r-rtb-00b6ba4a72894aa133901788224][0m
+[0m[1mmodule.route_tables.aws_route.tgw_routes["SUB-NADTC04-C-Data-Ingestion-EXT-APP1-172.16.0.0/12"]: Refreshing state... [id=r-rtb-00b6ba4a72894aa133337197873][0m
+[0m[1mmodule.route_tables.aws_route.tgw_routes["SUB-NADTC04-A-Data-Ingestion-EXT-TGW1-172.16.0.0/12"]: Refreshing state... [id=r-rtb-0ac2024b798192ce63337197873][0m
+[0m[1mmodule.route_tables.aws_route.tgw_routes["SUB-NADTC04-A-Data-Ingestion-EXT-APP1-172.16.0.0/12"]: Refreshing state... [id=r-rtb-010d201c4258cb9d83337197873][0m
+[0m[1mmodule.route_tables.aws_route.tgw_routes["SUB-NADTC04-B-Data-Ingestion-EXT-TGW1-172.16.0.0/12"]: Refreshing state... [id=r-rtb-0cb25a514d313e3db3337197873][0m
+[0m[1mmodule.route_tables.aws_route.tgw_routes["SUB-NADTC04-C-Data-Ingestion-EXT-MGMT1-10.0.0.0/8"]: Refreshing state... [id=r-rtb-07342afb8d53c5e8c3423270202][0m
+[0m[1mmodule.route_tables.aws_route.tgw_routes["SUB-NADTC04-A-Data-Ingestion-EXT-MGMT1-192.168.0.0/16"]: Refreshing state... [id=r-rtb-0a8d7d6bc329602d43901788224][0m
+[0m[1mmodule.route_tables.aws_route.tgw_routes["SUB-NADTC04-C-Data-Ingestion-EXT-APP1-10.0.0.0/8"]: Refreshing state... [id=r-rtb-00b6ba4a72894aa133423270202][0m
+[0m[1mmodule.route_tables.aws_route.tgw_routes["SUB-NADTC04-A-Data-Ingestion-EXT-APP1-192.168.0.0/16"]: Refreshing state... [id=r-rtb-010d201c4258cb9d83901788224][0m
+[0m[1mmodule.route_tables.aws_route.tgw_routes["SUB-NADTC04-B-Data-Ingestion-EXT-APP1-10.0.0.0/8"]: Refreshing state... [id=r-rtb-0399cf30935f2a2a23423270202][0m
+[0m[1mmodule.route_tables.aws_route.tgw_routes["SUB-NADTC04-B-Data-Ingestion-EXT-MGMT1-192.168.0.0/16"]: Refreshing state... [id=r-rtb-0fcd6f0996b2237bf3901788224][0m
+[0m[1mmodule.route_tables.aws_route.tgw_routes["SUB-NADTC04-B-Data-Ingestion-EXT-MGMT1-172.16.0.0/12"]: Refreshing state... [id=r-rtb-0fcd6f0996b2237bf3337197873][0m
+[0m[1mmodule.route_tables.aws_route.tgw_routes["SUB-NADTC04-A-Data-Ingestion-EXT-MGMT1-172.16.0.0/12"]: Refreshing state... [id=r-rtb-0a8d7d6bc329602d43337197873][0m
+[0m[1mmodule.route_tables.aws_route.tgw_routes["SUB-NADTC04-B-Data-Ingestion-EXT-APP1-192.168.0.0/16"]: Refreshing state... [id=r-rtb-0399cf30935f2a2a23901788224][0m
+[0m[1mmodule.route_tables.aws_route.tgw_routes["SUB-NADTC04-A-Data-Ingestion-EXT-MGMT1-10.0.0.0/8"]: Refreshing state... [id=r-rtb-0a8d7d6bc329602d43423270202][0m
+[0m[1mmodule.route_tables.aws_route.tgw_routes["SUB-NADTC04-C-Data-Ingestion-EXT-MGMT1-192.168.0.0/16"]: Refreshing state... [id=r-rtb-07342afb8d53c5e8c3901788224][0m
+[0m[1mmodule.route_tables.aws_route.tgw_routes["SUB-NADTC04-A-Data-Ingestion-EXT-APP1-10.0.0.0/8"]: Refreshing state... [id=r-rtb-010d201c4258cb9d83423270202][0m
+[0m[1mmodule.route_tables.aws_route.tgw_routes["SUB-NADTC04-C-Data-Ingestion-EXT-TGW1-10.0.0.0/8"]: Refreshing state... [id=r-rtb-0efdb4a3078d3d3a93423270202][0m
+[0m[1mmodule.route_tables.aws_route.tgw_routes["SUB-NADTC04-C-Data-Ingestion-EXT-TGW1-192.168.0.0/16"]: Refreshing state... [id=r-rtb-0efdb4a3078d3d3a93901788224][0m
+[0m[1mmodule.route_tables.aws_route.tgw_routes["SUB-NADTC04-A-Data-Ingestion-EXT-TGW1-10.0.0.0/8"]: Refreshing state... [id=r-rtb-0ac2024b798192ce63423270202][0m
+[0m[1mmodule.route_tables.aws_route.tgw_routes["SUB-NADTC04-A-Data-Ingestion-EXT-TGW1-192.168.0.0/16"]: Refreshing state... [id=r-rtb-0ac2024b798192ce63901788224][0m
+[0m[1mmodule.route_tables.aws_route.tgw_routes["SUB-NADTC04-C-Data-Ingestion-EXT-TGW1-172.16.0.0/12"]: Refreshing state... [id=r-rtb-0efdb4a3078d3d3a93337197873][0m
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  [32m+[0m create[0m
+  [33m~[0m update in-place[0m
+  [31m-[0m destroy[0m
+[31m-[0m/[32m+[0m destroy and then create replacement[0m
+
+Terraform will perform the following actions:
+
+[1m  # module.igw.aws_internet_gateway.this[0m will be updated in-place
+[0m  [33m~[0m[0m resource "aws_internet_gateway" "this" {
+        id       = "igw-034ccd4bad89c1643"
+      [33m~[0m[0m tags     = {
+          [33m~[0m[0m "Name" = "IGW-NADTC04-Data-Ingestion" [33m->[0m[0m "IGW-NADTC04-DATA-INGESTION"
+        }
+      [33m~[0m[0m tags_all = {
+          [33m~[0m[0m "Name" = "IGW-NADTC04-Data-Ingestion" [33m->[0m[0m "IGW-NADTC04-DATA-INGESTION"
+        }
+        [90m# (4 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-A-DATA-INGESTION-EXT-APP1-10.0.0.0/8"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route" "tgw_routes" {
+      [32m+[0m[0m destination_cidr_block = "10.0.0.0/8"
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m instance_id            = (known after apply)
+      [32m+[0m[0m instance_owner_id      = (known after apply)
+      [32m+[0m[0m network_interface_id   = (known after apply)
+      [32m+[0m[0m origin                 = (known after apply)
+      [32m+[0m[0m region                 = "us-west-2"
+      [32m+[0m[0m route_table_id         = (known after apply)
+      [32m+[0m[0m state                  = (known after apply)
+      [32m+[0m[0m transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-A-DATA-INGESTION-EXT-APP1-172.16.0.0/12"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route" "tgw_routes" {
+      [32m+[0m[0m destination_cidr_block = "172.16.0.0/12"
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m instance_id            = (known after apply)
+      [32m+[0m[0m instance_owner_id      = (known after apply)
+      [32m+[0m[0m network_interface_id   = (known after apply)
+      [32m+[0m[0m origin                 = (known after apply)
+      [32m+[0m[0m region                 = "us-west-2"
+      [32m+[0m[0m route_table_id         = (known after apply)
+      [32m+[0m[0m state                  = (known after apply)
+      [32m+[0m[0m transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-A-DATA-INGESTION-EXT-APP1-192.168.0.0/16"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route" "tgw_routes" {
+      [32m+[0m[0m destination_cidr_block = "192.168.0.0/16"
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m instance_id            = (known after apply)
+      [32m+[0m[0m instance_owner_id      = (known after apply)
+      [32m+[0m[0m network_interface_id   = (known after apply)
+      [32m+[0m[0m origin                 = (known after apply)
+      [32m+[0m[0m region                 = "us-west-2"
+      [32m+[0m[0m route_table_id         = (known after apply)
+      [32m+[0m[0m state                  = (known after apply)
+      [32m+[0m[0m transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-A-DATA-INGESTION-EXT-MGMT1-10.0.0.0/8"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route" "tgw_routes" {
+      [32m+[0m[0m destination_cidr_block = "10.0.0.0/8"
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m instance_id            = (known after apply)
+      [32m+[0m[0m instance_owner_id      = (known after apply)
+      [32m+[0m[0m network_interface_id   = (known after apply)
+      [32m+[0m[0m origin                 = (known after apply)
+      [32m+[0m[0m region                 = "us-west-2"
+      [32m+[0m[0m route_table_id         = (known after apply)
+      [32m+[0m[0m state                  = (known after apply)
+      [32m+[0m[0m transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-A-DATA-INGESTION-EXT-MGMT1-172.16.0.0/12"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route" "tgw_routes" {
+      [32m+[0m[0m destination_cidr_block = "172.16.0.0/12"
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m instance_id            = (known after apply)
+      [32m+[0m[0m instance_owner_id      = (known after apply)
+      [32m+[0m[0m network_interface_id   = (known after apply)
+      [32m+[0m[0m origin                 = (known after apply)
+      [32m+[0m[0m region                 = "us-west-2"
+      [32m+[0m[0m route_table_id         = (known after apply)
+      [32m+[0m[0m state                  = (known after apply)
+      [32m+[0m[0m transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-A-DATA-INGESTION-EXT-MGMT1-192.168.0.0/16"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route" "tgw_routes" {
+      [32m+[0m[0m destination_cidr_block = "192.168.0.0/16"
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m instance_id            = (known after apply)
+      [32m+[0m[0m instance_owner_id      = (known after apply)
+      [32m+[0m[0m network_interface_id   = (known after apply)
+      [32m+[0m[0m origin                 = (known after apply)
+      [32m+[0m[0m region                 = "us-west-2"
+      [32m+[0m[0m route_table_id         = (known after apply)
+      [32m+[0m[0m state                  = (known after apply)
+      [32m+[0m[0m transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-A-DATA-INGESTION-EXT-TGW1-10.0.0.0/8"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route" "tgw_routes" {
+      [32m+[0m[0m destination_cidr_block = "10.0.0.0/8"
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m instance_id            = (known after apply)
+      [32m+[0m[0m instance_owner_id      = (known after apply)
+      [32m+[0m[0m network_interface_id   = (known after apply)
+      [32m+[0m[0m origin                 = (known after apply)
+      [32m+[0m[0m region                 = "us-west-2"
+      [32m+[0m[0m route_table_id         = (known after apply)
+      [32m+[0m[0m state                  = (known after apply)
+      [32m+[0m[0m transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-A-DATA-INGESTION-EXT-TGW1-172.16.0.0/12"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route" "tgw_routes" {
+      [32m+[0m[0m destination_cidr_block = "172.16.0.0/12"
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m instance_id            = (known after apply)
+      [32m+[0m[0m instance_owner_id      = (known after apply)
+      [32m+[0m[0m network_interface_id   = (known after apply)
+      [32m+[0m[0m origin                 = (known after apply)
+      [32m+[0m[0m region                 = "us-west-2"
+      [32m+[0m[0m route_table_id         = (known after apply)
+      [32m+[0m[0m state                  = (known after apply)
+      [32m+[0m[0m transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-A-DATA-INGESTION-EXT-TGW1-192.168.0.0/16"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route" "tgw_routes" {
+      [32m+[0m[0m destination_cidr_block = "192.168.0.0/16"
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m instance_id            = (known after apply)
+      [32m+[0m[0m instance_owner_id      = (known after apply)
+      [32m+[0m[0m network_interface_id   = (known after apply)
+      [32m+[0m[0m origin                 = (known after apply)
+      [32m+[0m[0m region                 = "us-west-2"
+      [32m+[0m[0m route_table_id         = (known after apply)
+      [32m+[0m[0m state                  = (known after apply)
+      [32m+[0m[0m transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-A-Data-Ingestion-EXT-APP1-10.0.0.0/8"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-A-Data-Ingestion-EXT-APP1-10.0.0.0/8"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route" "tgw_routes" {
+      [31m-[0m[0m destination_cidr_block      = "10.0.0.0/8" [90m-> null[0m[0m
+      [31m-[0m[0m id                          = "r-rtb-010d201c4258cb9d83423270202" [90m-> null[0m[0m
+      [31m-[0m[0m origin                      = "CreateRoute" [90m-> null[0m[0m
+      [31m-[0m[0m region                      = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route_table_id              = "rtb-010d201c4258cb9d8" [90m-> null[0m[0m
+      [31m-[0m[0m state                       = "active" [90m-> null[0m[0m
+      [31m-[0m[0m transit_gateway_id          = "tgw-0058b410c08c6789e" [90m-> null[0m[0m
+        [90m# (13 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-A-Data-Ingestion-EXT-APP1-172.16.0.0/12"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-A-Data-Ingestion-EXT-APP1-172.16.0.0/12"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route" "tgw_routes" {
+      [31m-[0m[0m destination_cidr_block      = "172.16.0.0/12" [90m-> null[0m[0m
+      [31m-[0m[0m id                          = "r-rtb-010d201c4258cb9d83337197873" [90m-> null[0m[0m
+      [31m-[0m[0m origin                      = "CreateRoute" [90m-> null[0m[0m
+      [31m-[0m[0m region                      = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route_table_id              = "rtb-010d201c4258cb9d8" [90m-> null[0m[0m
+      [31m-[0m[0m state                       = "active" [90m-> null[0m[0m
+      [31m-[0m[0m transit_gateway_id          = "tgw-0058b410c08c6789e" [90m-> null[0m[0m
+        [90m# (13 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-A-Data-Ingestion-EXT-APP1-192.168.0.0/16"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-A-Data-Ingestion-EXT-APP1-192.168.0.0/16"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route" "tgw_routes" {
+      [31m-[0m[0m destination_cidr_block      = "192.168.0.0/16" [90m-> null[0m[0m
+      [31m-[0m[0m id                          = "r-rtb-010d201c4258cb9d83901788224" [90m-> null[0m[0m
+      [31m-[0m[0m origin                      = "CreateRoute" [90m-> null[0m[0m
+      [31m-[0m[0m region                      = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route_table_id              = "rtb-010d201c4258cb9d8" [90m-> null[0m[0m
+      [31m-[0m[0m state                       = "active" [90m-> null[0m[0m
+      [31m-[0m[0m transit_gateway_id          = "tgw-0058b410c08c6789e" [90m-> null[0m[0m
+        [90m# (13 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-A-Data-Ingestion-EXT-MGMT1-10.0.0.0/8"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-A-Data-Ingestion-EXT-MGMT1-10.0.0.0/8"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route" "tgw_routes" {
+      [31m-[0m[0m destination_cidr_block      = "10.0.0.0/8" [90m-> null[0m[0m
+      [31m-[0m[0m id                          = "r-rtb-0a8d7d6bc329602d43423270202" [90m-> null[0m[0m
+      [31m-[0m[0m origin                      = "CreateRoute" [90m-> null[0m[0m
+      [31m-[0m[0m region                      = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route_table_id              = "rtb-0a8d7d6bc329602d4" [90m-> null[0m[0m
+      [31m-[0m[0m state                       = "active" [90m-> null[0m[0m
+      [31m-[0m[0m transit_gateway_id          = "tgw-0058b410c08c6789e" [90m-> null[0m[0m
+        [90m# (13 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-A-Data-Ingestion-EXT-MGMT1-172.16.0.0/12"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-A-Data-Ingestion-EXT-MGMT1-172.16.0.0/12"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route" "tgw_routes" {
+      [31m-[0m[0m destination_cidr_block      = "172.16.0.0/12" [90m-> null[0m[0m
+      [31m-[0m[0m id                          = "r-rtb-0a8d7d6bc329602d43337197873" [90m-> null[0m[0m
+      [31m-[0m[0m origin                      = "CreateRoute" [90m-> null[0m[0m
+      [31m-[0m[0m region                      = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route_table_id              = "rtb-0a8d7d6bc329602d4" [90m-> null[0m[0m
+      [31m-[0m[0m state                       = "active" [90m-> null[0m[0m
+      [31m-[0m[0m transit_gateway_id          = "tgw-0058b410c08c6789e" [90m-> null[0m[0m
+        [90m# (13 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-A-Data-Ingestion-EXT-MGMT1-192.168.0.0/16"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-A-Data-Ingestion-EXT-MGMT1-192.168.0.0/16"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route" "tgw_routes" {
+      [31m-[0m[0m destination_cidr_block      = "192.168.0.0/16" [90m-> null[0m[0m
+      [31m-[0m[0m id                          = "r-rtb-0a8d7d6bc329602d43901788224" [90m-> null[0m[0m
+      [31m-[0m[0m origin                      = "CreateRoute" [90m-> null[0m[0m
+      [31m-[0m[0m region                      = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route_table_id              = "rtb-0a8d7d6bc329602d4" [90m-> null[0m[0m
+      [31m-[0m[0m state                       = "active" [90m-> null[0m[0m
+      [31m-[0m[0m transit_gateway_id          = "tgw-0058b410c08c6789e" [90m-> null[0m[0m
+        [90m# (13 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-A-Data-Ingestion-EXT-TGW1-10.0.0.0/8"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-A-Data-Ingestion-EXT-TGW1-10.0.0.0/8"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route" "tgw_routes" {
+      [31m-[0m[0m destination_cidr_block      = "10.0.0.0/8" [90m-> null[0m[0m
+      [31m-[0m[0m id                          = "r-rtb-0ac2024b798192ce63423270202" [90m-> null[0m[0m
+      [31m-[0m[0m origin                      = "CreateRoute" [90m-> null[0m[0m
+      [31m-[0m[0m region                      = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route_table_id              = "rtb-0ac2024b798192ce6" [90m-> null[0m[0m
+      [31m-[0m[0m state                       = "active" [90m-> null[0m[0m
+      [31m-[0m[0m transit_gateway_id          = "tgw-0058b410c08c6789e" [90m-> null[0m[0m
+        [90m# (13 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-A-Data-Ingestion-EXT-TGW1-172.16.0.0/12"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-A-Data-Ingestion-EXT-TGW1-172.16.0.0/12"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route" "tgw_routes" {
+      [31m-[0m[0m destination_cidr_block      = "172.16.0.0/12" [90m-> null[0m[0m
+      [31m-[0m[0m id                          = "r-rtb-0ac2024b798192ce63337197873" [90m-> null[0m[0m
+      [31m-[0m[0m origin                      = "CreateRoute" [90m-> null[0m[0m
+      [31m-[0m[0m region                      = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route_table_id              = "rtb-0ac2024b798192ce6" [90m-> null[0m[0m
+      [31m-[0m[0m state                       = "active" [90m-> null[0m[0m
+      [31m-[0m[0m transit_gateway_id          = "tgw-0058b410c08c6789e" [90m-> null[0m[0m
+        [90m# (13 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-A-Data-Ingestion-EXT-TGW1-192.168.0.0/16"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-A-Data-Ingestion-EXT-TGW1-192.168.0.0/16"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route" "tgw_routes" {
+      [31m-[0m[0m destination_cidr_block      = "192.168.0.0/16" [90m-> null[0m[0m
+      [31m-[0m[0m id                          = "r-rtb-0ac2024b798192ce63901788224" [90m-> null[0m[0m
+      [31m-[0m[0m origin                      = "CreateRoute" [90m-> null[0m[0m
+      [31m-[0m[0m region                      = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route_table_id              = "rtb-0ac2024b798192ce6" [90m-> null[0m[0m
+      [31m-[0m[0m state                       = "active" [90m-> null[0m[0m
+      [31m-[0m[0m transit_gateway_id          = "tgw-0058b410c08c6789e" [90m-> null[0m[0m
+        [90m# (13 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-B-DATA-INGESTION-EXT-APP1-10.0.0.0/8"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route" "tgw_routes" {
+      [32m+[0m[0m destination_cidr_block = "10.0.0.0/8"
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m instance_id            = (known after apply)
+      [32m+[0m[0m instance_owner_id      = (known after apply)
+      [32m+[0m[0m network_interface_id   = (known after apply)
+      [32m+[0m[0m origin                 = (known after apply)
+      [32m+[0m[0m region                 = "us-west-2"
+      [32m+[0m[0m route_table_id         = (known after apply)
+      [32m+[0m[0m state                  = (known after apply)
+      [32m+[0m[0m transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-B-DATA-INGESTION-EXT-APP1-172.16.0.0/12"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route" "tgw_routes" {
+      [32m+[0m[0m destination_cidr_block = "172.16.0.0/12"
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m instance_id            = (known after apply)
+      [32m+[0m[0m instance_owner_id      = (known after apply)
+      [32m+[0m[0m network_interface_id   = (known after apply)
+      [32m+[0m[0m origin                 = (known after apply)
+      [32m+[0m[0m region                 = "us-west-2"
+      [32m+[0m[0m route_table_id         = (known after apply)
+      [32m+[0m[0m state                  = (known after apply)
+      [32m+[0m[0m transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-B-DATA-INGESTION-EXT-APP1-192.168.0.0/16"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route" "tgw_routes" {
+      [32m+[0m[0m destination_cidr_block = "192.168.0.0/16"
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m instance_id            = (known after apply)
+      [32m+[0m[0m instance_owner_id      = (known after apply)
+      [32m+[0m[0m network_interface_id   = (known after apply)
+      [32m+[0m[0m origin                 = (known after apply)
+      [32m+[0m[0m region                 = "us-west-2"
+      [32m+[0m[0m route_table_id         = (known after apply)
+      [32m+[0m[0m state                  = (known after apply)
+      [32m+[0m[0m transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-B-DATA-INGESTION-EXT-MGMT1-10.0.0.0/8"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route" "tgw_routes" {
+      [32m+[0m[0m destination_cidr_block = "10.0.0.0/8"
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m instance_id            = (known after apply)
+      [32m+[0m[0m instance_owner_id      = (known after apply)
+      [32m+[0m[0m network_interface_id   = (known after apply)
+      [32m+[0m[0m origin                 = (known after apply)
+      [32m+[0m[0m region                 = "us-west-2"
+      [32m+[0m[0m route_table_id         = (known after apply)
+      [32m+[0m[0m state                  = (known after apply)
+      [32m+[0m[0m transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-B-DATA-INGESTION-EXT-MGMT1-172.16.0.0/12"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route" "tgw_routes" {
+      [32m+[0m[0m destination_cidr_block = "172.16.0.0/12"
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m instance_id            = (known after apply)
+      [32m+[0m[0m instance_owner_id      = (known after apply)
+      [32m+[0m[0m network_interface_id   = (known after apply)
+      [32m+[0m[0m origin                 = (known after apply)
+      [32m+[0m[0m region                 = "us-west-2"
+      [32m+[0m[0m route_table_id         = (known after apply)
+      [32m+[0m[0m state                  = (known after apply)
+      [32m+[0m[0m transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-B-DATA-INGESTION-EXT-MGMT1-192.168.0.0/16"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route" "tgw_routes" {
+      [32m+[0m[0m destination_cidr_block = "192.168.0.0/16"
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m instance_id            = (known after apply)
+      [32m+[0m[0m instance_owner_id      = (known after apply)
+      [32m+[0m[0m network_interface_id   = (known after apply)
+      [32m+[0m[0m origin                 = (known after apply)
+      [32m+[0m[0m region                 = "us-west-2"
+      [32m+[0m[0m route_table_id         = (known after apply)
+      [32m+[0m[0m state                  = (known after apply)
+      [32m+[0m[0m transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-B-DATA-INGESTION-EXT-TGW1-10.0.0.0/8"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route" "tgw_routes" {
+      [32m+[0m[0m destination_cidr_block = "10.0.0.0/8"
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m instance_id            = (known after apply)
+      [32m+[0m[0m instance_owner_id      = (known after apply)
+      [32m+[0m[0m network_interface_id   = (known after apply)
+      [32m+[0m[0m origin                 = (known after apply)
+      [32m+[0m[0m region                 = "us-west-2"
+      [32m+[0m[0m route_table_id         = (known after apply)
+      [32m+[0m[0m state                  = (known after apply)
+      [32m+[0m[0m transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-B-DATA-INGESTION-EXT-TGW1-172.16.0.0/12"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route" "tgw_routes" {
+      [32m+[0m[0m destination_cidr_block = "172.16.0.0/12"
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m instance_id            = (known after apply)
+      [32m+[0m[0m instance_owner_id      = (known after apply)
+      [32m+[0m[0m network_interface_id   = (known after apply)
+      [32m+[0m[0m origin                 = (known after apply)
+      [32m+[0m[0m region                 = "us-west-2"
+      [32m+[0m[0m route_table_id         = (known after apply)
+      [32m+[0m[0m state                  = (known after apply)
+      [32m+[0m[0m transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-B-DATA-INGESTION-EXT-TGW1-192.168.0.0/16"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route" "tgw_routes" {
+      [32m+[0m[0m destination_cidr_block = "192.168.0.0/16"
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m instance_id            = (known after apply)
+      [32m+[0m[0m instance_owner_id      = (known after apply)
+      [32m+[0m[0m network_interface_id   = (known after apply)
+      [32m+[0m[0m origin                 = (known after apply)
+      [32m+[0m[0m region                 = "us-west-2"
+      [32m+[0m[0m route_table_id         = (known after apply)
+      [32m+[0m[0m state                  = (known after apply)
+      [32m+[0m[0m transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-B-Data-Ingestion-EXT-APP1-10.0.0.0/8"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-B-Data-Ingestion-EXT-APP1-10.0.0.0/8"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route" "tgw_routes" {
+      [31m-[0m[0m destination_cidr_block      = "10.0.0.0/8" [90m-> null[0m[0m
+      [31m-[0m[0m id                          = "r-rtb-0399cf30935f2a2a23423270202" [90m-> null[0m[0m
+      [31m-[0m[0m origin                      = "CreateRoute" [90m-> null[0m[0m
+      [31m-[0m[0m region                      = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route_table_id              = "rtb-0399cf30935f2a2a2" [90m-> null[0m[0m
+      [31m-[0m[0m state                       = "active" [90m-> null[0m[0m
+      [31m-[0m[0m transit_gateway_id          = "tgw-0058b410c08c6789e" [90m-> null[0m[0m
+        [90m# (13 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-B-Data-Ingestion-EXT-APP1-172.16.0.0/12"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-B-Data-Ingestion-EXT-APP1-172.16.0.0/12"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route" "tgw_routes" {
+      [31m-[0m[0m destination_cidr_block      = "172.16.0.0/12" [90m-> null[0m[0m
+      [31m-[0m[0m id                          = "r-rtb-0399cf30935f2a2a23337197873" [90m-> null[0m[0m
+      [31m-[0m[0m origin                      = "CreateRoute" [90m-> null[0m[0m
+      [31m-[0m[0m region                      = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route_table_id              = "rtb-0399cf30935f2a2a2" [90m-> null[0m[0m
+      [31m-[0m[0m state                       = "active" [90m-> null[0m[0m
+      [31m-[0m[0m transit_gateway_id          = "tgw-0058b410c08c6789e" [90m-> null[0m[0m
+        [90m# (13 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-B-Data-Ingestion-EXT-APP1-192.168.0.0/16"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-B-Data-Ingestion-EXT-APP1-192.168.0.0/16"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route" "tgw_routes" {
+      [31m-[0m[0m destination_cidr_block      = "192.168.0.0/16" [90m-> null[0m[0m
+      [31m-[0m[0m id                          = "r-rtb-0399cf30935f2a2a23901788224" [90m-> null[0m[0m
+      [31m-[0m[0m origin                      = "CreateRoute" [90m-> null[0m[0m
+      [31m-[0m[0m region                      = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route_table_id              = "rtb-0399cf30935f2a2a2" [90m-> null[0m[0m
+      [31m-[0m[0m state                       = "active" [90m-> null[0m[0m
+      [31m-[0m[0m transit_gateway_id          = "tgw-0058b410c08c6789e" [90m-> null[0m[0m
+        [90m# (13 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-B-Data-Ingestion-EXT-MGMT1-10.0.0.0/8"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-B-Data-Ingestion-EXT-MGMT1-10.0.0.0/8"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route" "tgw_routes" {
+      [31m-[0m[0m destination_cidr_block      = "10.0.0.0/8" [90m-> null[0m[0m
+      [31m-[0m[0m id                          = "r-rtb-0fcd6f0996b2237bf3423270202" [90m-> null[0m[0m
+      [31m-[0m[0m origin                      = "CreateRoute" [90m-> null[0m[0m
+      [31m-[0m[0m region                      = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route_table_id              = "rtb-0fcd6f0996b2237bf" [90m-> null[0m[0m
+      [31m-[0m[0m state                       = "active" [90m-> null[0m[0m
+      [31m-[0m[0m transit_gateway_id          = "tgw-0058b410c08c6789e" [90m-> null[0m[0m
+        [90m# (13 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-B-Data-Ingestion-EXT-MGMT1-172.16.0.0/12"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-B-Data-Ingestion-EXT-MGMT1-172.16.0.0/12"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route" "tgw_routes" {
+      [31m-[0m[0m destination_cidr_block      = "172.16.0.0/12" [90m-> null[0m[0m
+      [31m-[0m[0m id                          = "r-rtb-0fcd6f0996b2237bf3337197873" [90m-> null[0m[0m
+      [31m-[0m[0m origin                      = "CreateRoute" [90m-> null[0m[0m
+      [31m-[0m[0m region                      = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route_table_id              = "rtb-0fcd6f0996b2237bf" [90m-> null[0m[0m
+      [31m-[0m[0m state                       = "active" [90m-> null[0m[0m
+      [31m-[0m[0m transit_gateway_id          = "tgw-0058b410c08c6789e" [90m-> null[0m[0m
+        [90m# (13 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-B-Data-Ingestion-EXT-MGMT1-192.168.0.0/16"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-B-Data-Ingestion-EXT-MGMT1-192.168.0.0/16"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route" "tgw_routes" {
+      [31m-[0m[0m destination_cidr_block      = "192.168.0.0/16" [90m-> null[0m[0m
+      [31m-[0m[0m id                          = "r-rtb-0fcd6f0996b2237bf3901788224" [90m-> null[0m[0m
+      [31m-[0m[0m origin                      = "CreateRoute" [90m-> null[0m[0m
+      [31m-[0m[0m region                      = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route_table_id              = "rtb-0fcd6f0996b2237bf" [90m-> null[0m[0m
+      [31m-[0m[0m state                       = "active" [90m-> null[0m[0m
+      [31m-[0m[0m transit_gateway_id          = "tgw-0058b410c08c6789e" [90m-> null[0m[0m
+        [90m# (13 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-B-Data-Ingestion-EXT-TGW1-10.0.0.0/8"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-B-Data-Ingestion-EXT-TGW1-10.0.0.0/8"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route" "tgw_routes" {
+      [31m-[0m[0m destination_cidr_block      = "10.0.0.0/8" [90m-> null[0m[0m
+      [31m-[0m[0m id                          = "r-rtb-0cb25a514d313e3db3423270202" [90m-> null[0m[0m
+      [31m-[0m[0m origin                      = "CreateRoute" [90m-> null[0m[0m
+      [31m-[0m[0m region                      = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route_table_id              = "rtb-0cb25a514d313e3db" [90m-> null[0m[0m
+      [31m-[0m[0m state                       = "active" [90m-> null[0m[0m
+      [31m-[0m[0m transit_gateway_id          = "tgw-0058b410c08c6789e" [90m-> null[0m[0m
+        [90m# (13 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-B-Data-Ingestion-EXT-TGW1-172.16.0.0/12"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-B-Data-Ingestion-EXT-TGW1-172.16.0.0/12"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route" "tgw_routes" {
+      [31m-[0m[0m destination_cidr_block      = "172.16.0.0/12" [90m-> null[0m[0m
+      [31m-[0m[0m id                          = "r-rtb-0cb25a514d313e3db3337197873" [90m-> null[0m[0m
+      [31m-[0m[0m origin                      = "CreateRoute" [90m-> null[0m[0m
+      [31m-[0m[0m region                      = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route_table_id              = "rtb-0cb25a514d313e3db" [90m-> null[0m[0m
+      [31m-[0m[0m state                       = "active" [90m-> null[0m[0m
+      [31m-[0m[0m transit_gateway_id          = "tgw-0058b410c08c6789e" [90m-> null[0m[0m
+        [90m# (13 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-B-Data-Ingestion-EXT-TGW1-192.168.0.0/16"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-B-Data-Ingestion-EXT-TGW1-192.168.0.0/16"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route" "tgw_routes" {
+      [31m-[0m[0m destination_cidr_block      = "192.168.0.0/16" [90m-> null[0m[0m
+      [31m-[0m[0m id                          = "r-rtb-0cb25a514d313e3db3901788224" [90m-> null[0m[0m
+      [31m-[0m[0m origin                      = "CreateRoute" [90m-> null[0m[0m
+      [31m-[0m[0m region                      = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route_table_id              = "rtb-0cb25a514d313e3db" [90m-> null[0m[0m
+      [31m-[0m[0m state                       = "active" [90m-> null[0m[0m
+      [31m-[0m[0m transit_gateway_id          = "tgw-0058b410c08c6789e" [90m-> null[0m[0m
+        [90m# (13 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-C-DATA-INGESTION-EXT-APP1-10.0.0.0/8"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route" "tgw_routes" {
+      [32m+[0m[0m destination_cidr_block = "10.0.0.0/8"
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m instance_id            = (known after apply)
+      [32m+[0m[0m instance_owner_id      = (known after apply)
+      [32m+[0m[0m network_interface_id   = (known after apply)
+      [32m+[0m[0m origin                 = (known after apply)
+      [32m+[0m[0m region                 = "us-west-2"
+      [32m+[0m[0m route_table_id         = (known after apply)
+      [32m+[0m[0m state                  = (known after apply)
+      [32m+[0m[0m transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-C-DATA-INGESTION-EXT-APP1-172.16.0.0/12"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route" "tgw_routes" {
+      [32m+[0m[0m destination_cidr_block = "172.16.0.0/12"
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m instance_id            = (known after apply)
+      [32m+[0m[0m instance_owner_id      = (known after apply)
+      [32m+[0m[0m network_interface_id   = (known after apply)
+      [32m+[0m[0m origin                 = (known after apply)
+      [32m+[0m[0m region                 = "us-west-2"
+      [32m+[0m[0m route_table_id         = (known after apply)
+      [32m+[0m[0m state                  = (known after apply)
+      [32m+[0m[0m transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-C-DATA-INGESTION-EXT-APP1-192.168.0.0/16"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route" "tgw_routes" {
+      [32m+[0m[0m destination_cidr_block = "192.168.0.0/16"
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m instance_id            = (known after apply)
+      [32m+[0m[0m instance_owner_id      = (known after apply)
+      [32m+[0m[0m network_interface_id   = (known after apply)
+      [32m+[0m[0m origin                 = (known after apply)
+      [32m+[0m[0m region                 = "us-west-2"
+      [32m+[0m[0m route_table_id         = (known after apply)
+      [32m+[0m[0m state                  = (known after apply)
+      [32m+[0m[0m transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-C-DATA-INGESTION-EXT-MGMT1-10.0.0.0/8"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route" "tgw_routes" {
+      [32m+[0m[0m destination_cidr_block = "10.0.0.0/8"
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m instance_id            = (known after apply)
+      [32m+[0m[0m instance_owner_id      = (known after apply)
+      [32m+[0m[0m network_interface_id   = (known after apply)
+      [32m+[0m[0m origin                 = (known after apply)
+      [32m+[0m[0m region                 = "us-west-2"
+      [32m+[0m[0m route_table_id         = (known after apply)
+      [32m+[0m[0m state                  = (known after apply)
+      [32m+[0m[0m transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-C-DATA-INGESTION-EXT-MGMT1-172.16.0.0/12"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route" "tgw_routes" {
+      [32m+[0m[0m destination_cidr_block = "172.16.0.0/12"
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m instance_id            = (known after apply)
+      [32m+[0m[0m instance_owner_id      = (known after apply)
+      [32m+[0m[0m network_interface_id   = (known after apply)
+      [32m+[0m[0m origin                 = (known after apply)
+      [32m+[0m[0m region                 = "us-west-2"
+      [32m+[0m[0m route_table_id         = (known after apply)
+      [32m+[0m[0m state                  = (known after apply)
+      [32m+[0m[0m transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-C-DATA-INGESTION-EXT-MGMT1-192.168.0.0/16"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route" "tgw_routes" {
+      [32m+[0m[0m destination_cidr_block = "192.168.0.0/16"
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m instance_id            = (known after apply)
+      [32m+[0m[0m instance_owner_id      = (known after apply)
+      [32m+[0m[0m network_interface_id   = (known after apply)
+      [32m+[0m[0m origin                 = (known after apply)
+      [32m+[0m[0m region                 = "us-west-2"
+      [32m+[0m[0m route_table_id         = (known after apply)
+      [32m+[0m[0m state                  = (known after apply)
+      [32m+[0m[0m transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-C-DATA-INGESTION-EXT-TGW1-10.0.0.0/8"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route" "tgw_routes" {
+      [32m+[0m[0m destination_cidr_block = "10.0.0.0/8"
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m instance_id            = (known after apply)
+      [32m+[0m[0m instance_owner_id      = (known after apply)
+      [32m+[0m[0m network_interface_id   = (known after apply)
+      [32m+[0m[0m origin                 = (known after apply)
+      [32m+[0m[0m region                 = "us-west-2"
+      [32m+[0m[0m route_table_id         = (known after apply)
+      [32m+[0m[0m state                  = (known after apply)
+      [32m+[0m[0m transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-C-DATA-INGESTION-EXT-TGW1-172.16.0.0/12"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route" "tgw_routes" {
+      [32m+[0m[0m destination_cidr_block = "172.16.0.0/12"
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m instance_id            = (known after apply)
+      [32m+[0m[0m instance_owner_id      = (known after apply)
+      [32m+[0m[0m network_interface_id   = (known after apply)
+      [32m+[0m[0m origin                 = (known after apply)
+      [32m+[0m[0m region                 = "us-west-2"
+      [32m+[0m[0m route_table_id         = (known after apply)
+      [32m+[0m[0m state                  = (known after apply)
+      [32m+[0m[0m transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-C-DATA-INGESTION-EXT-TGW1-192.168.0.0/16"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route" "tgw_routes" {
+      [32m+[0m[0m destination_cidr_block = "192.168.0.0/16"
+      [32m+[0m[0m id                     = (known after apply)
+      [32m+[0m[0m instance_id            = (known after apply)
+      [32m+[0m[0m instance_owner_id      = (known after apply)
+      [32m+[0m[0m network_interface_id   = (known after apply)
+      [32m+[0m[0m origin                 = (known after apply)
+      [32m+[0m[0m region                 = "us-west-2"
+      [32m+[0m[0m route_table_id         = (known after apply)
+      [32m+[0m[0m state                  = (known after apply)
+      [32m+[0m[0m transit_gateway_id     = "tgw-0058b410c08c6789e"
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-C-Data-Ingestion-EXT-APP1-10.0.0.0/8"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-C-Data-Ingestion-EXT-APP1-10.0.0.0/8"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route" "tgw_routes" {
+      [31m-[0m[0m destination_cidr_block      = "10.0.0.0/8" [90m-> null[0m[0m
+      [31m-[0m[0m id                          = "r-rtb-00b6ba4a72894aa133423270202" [90m-> null[0m[0m
+      [31m-[0m[0m origin                      = "CreateRoute" [90m-> null[0m[0m
+      [31m-[0m[0m region                      = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route_table_id              = "rtb-00b6ba4a72894aa13" [90m-> null[0m[0m
+      [31m-[0m[0m state                       = "active" [90m-> null[0m[0m
+      [31m-[0m[0m transit_gateway_id          = "tgw-0058b410c08c6789e" [90m-> null[0m[0m
+        [90m# (13 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-C-Data-Ingestion-EXT-APP1-172.16.0.0/12"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-C-Data-Ingestion-EXT-APP1-172.16.0.0/12"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route" "tgw_routes" {
+      [31m-[0m[0m destination_cidr_block      = "172.16.0.0/12" [90m-> null[0m[0m
+      [31m-[0m[0m id                          = "r-rtb-00b6ba4a72894aa133337197873" [90m-> null[0m[0m
+      [31m-[0m[0m origin                      = "CreateRoute" [90m-> null[0m[0m
+      [31m-[0m[0m region                      = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route_table_id              = "rtb-00b6ba4a72894aa13" [90m-> null[0m[0m
+      [31m-[0m[0m state                       = "active" [90m-> null[0m[0m
+      [31m-[0m[0m transit_gateway_id          = "tgw-0058b410c08c6789e" [90m-> null[0m[0m
+        [90m# (13 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-C-Data-Ingestion-EXT-APP1-192.168.0.0/16"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-C-Data-Ingestion-EXT-APP1-192.168.0.0/16"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route" "tgw_routes" {
+      [31m-[0m[0m destination_cidr_block      = "192.168.0.0/16" [90m-> null[0m[0m
+      [31m-[0m[0m id                          = "r-rtb-00b6ba4a72894aa133901788224" [90m-> null[0m[0m
+      [31m-[0m[0m origin                      = "CreateRoute" [90m-> null[0m[0m
+      [31m-[0m[0m region                      = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route_table_id              = "rtb-00b6ba4a72894aa13" [90m-> null[0m[0m
+      [31m-[0m[0m state                       = "active" [90m-> null[0m[0m
+      [31m-[0m[0m transit_gateway_id          = "tgw-0058b410c08c6789e" [90m-> null[0m[0m
+        [90m# (13 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-C-Data-Ingestion-EXT-MGMT1-10.0.0.0/8"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-C-Data-Ingestion-EXT-MGMT1-10.0.0.0/8"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route" "tgw_routes" {
+      [31m-[0m[0m destination_cidr_block      = "10.0.0.0/8" [90m-> null[0m[0m
+      [31m-[0m[0m id                          = "r-rtb-07342afb8d53c5e8c3423270202" [90m-> null[0m[0m
+      [31m-[0m[0m origin                      = "CreateRoute" [90m-> null[0m[0m
+      [31m-[0m[0m region                      = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route_table_id              = "rtb-07342afb8d53c5e8c" [90m-> null[0m[0m
+      [31m-[0m[0m state                       = "active" [90m-> null[0m[0m
+      [31m-[0m[0m transit_gateway_id          = "tgw-0058b410c08c6789e" [90m-> null[0m[0m
+        [90m# (13 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-C-Data-Ingestion-EXT-MGMT1-172.16.0.0/12"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-C-Data-Ingestion-EXT-MGMT1-172.16.0.0/12"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route" "tgw_routes" {
+      [31m-[0m[0m destination_cidr_block      = "172.16.0.0/12" [90m-> null[0m[0m
+      [31m-[0m[0m id                          = "r-rtb-07342afb8d53c5e8c3337197873" [90m-> null[0m[0m
+      [31m-[0m[0m origin                      = "CreateRoute" [90m-> null[0m[0m
+      [31m-[0m[0m region                      = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route_table_id              = "rtb-07342afb8d53c5e8c" [90m-> null[0m[0m
+      [31m-[0m[0m state                       = "active" [90m-> null[0m[0m
+      [31m-[0m[0m transit_gateway_id          = "tgw-0058b410c08c6789e" [90m-> null[0m[0m
+        [90m# (13 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-C-Data-Ingestion-EXT-MGMT1-192.168.0.0/16"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-C-Data-Ingestion-EXT-MGMT1-192.168.0.0/16"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route" "tgw_routes" {
+      [31m-[0m[0m destination_cidr_block      = "192.168.0.0/16" [90m-> null[0m[0m
+      [31m-[0m[0m id                          = "r-rtb-07342afb8d53c5e8c3901788224" [90m-> null[0m[0m
+      [31m-[0m[0m origin                      = "CreateRoute" [90m-> null[0m[0m
+      [31m-[0m[0m region                      = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route_table_id              = "rtb-07342afb8d53c5e8c" [90m-> null[0m[0m
+      [31m-[0m[0m state                       = "active" [90m-> null[0m[0m
+      [31m-[0m[0m transit_gateway_id          = "tgw-0058b410c08c6789e" [90m-> null[0m[0m
+        [90m# (13 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-C-Data-Ingestion-EXT-TGW1-10.0.0.0/8"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-C-Data-Ingestion-EXT-TGW1-10.0.0.0/8"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route" "tgw_routes" {
+      [31m-[0m[0m destination_cidr_block      = "10.0.0.0/8" [90m-> null[0m[0m
+      [31m-[0m[0m id                          = "r-rtb-0efdb4a3078d3d3a93423270202" [90m-> null[0m[0m
+      [31m-[0m[0m origin                      = "CreateRoute" [90m-> null[0m[0m
+      [31m-[0m[0m region                      = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route_table_id              = "rtb-0efdb4a3078d3d3a9" [90m-> null[0m[0m
+      [31m-[0m[0m state                       = "active" [90m-> null[0m[0m
+      [31m-[0m[0m transit_gateway_id          = "tgw-0058b410c08c6789e" [90m-> null[0m[0m
+        [90m# (13 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-C-Data-Ingestion-EXT-TGW1-172.16.0.0/12"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-C-Data-Ingestion-EXT-TGW1-172.16.0.0/12"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route" "tgw_routes" {
+      [31m-[0m[0m destination_cidr_block      = "172.16.0.0/12" [90m-> null[0m[0m
+      [31m-[0m[0m id                          = "r-rtb-0efdb4a3078d3d3a93337197873" [90m-> null[0m[0m
+      [31m-[0m[0m origin                      = "CreateRoute" [90m-> null[0m[0m
+      [31m-[0m[0m region                      = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route_table_id              = "rtb-0efdb4a3078d3d3a9" [90m-> null[0m[0m
+      [31m-[0m[0m state                       = "active" [90m-> null[0m[0m
+      [31m-[0m[0m transit_gateway_id          = "tgw-0058b410c08c6789e" [90m-> null[0m[0m
+        [90m# (13 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route.tgw_routes["SUB-NADTC04-C-Data-Ingestion-EXT-TGW1-192.168.0.0/16"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-C-Data-Ingestion-EXT-TGW1-192.168.0.0/16"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route" "tgw_routes" {
+      [31m-[0m[0m destination_cidr_block      = "192.168.0.0/16" [90m-> null[0m[0m
+      [31m-[0m[0m id                          = "r-rtb-0efdb4a3078d3d3a93901788224" [90m-> null[0m[0m
+      [31m-[0m[0m origin                      = "CreateRoute" [90m-> null[0m[0m
+      [31m-[0m[0m region                      = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route_table_id              = "rtb-0efdb4a3078d3d3a9" [90m-> null[0m[0m
+      [31m-[0m[0m state                       = "active" [90m-> null[0m[0m
+      [31m-[0m[0m transit_gateway_id          = "tgw-0058b410c08c6789e" [90m-> null[0m[0m
+        [90m# (13 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route_table.rt["SUB-NADTC04-A-DATA-INGESTION-EXT-APP1"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route_table" "rt" {
+      [32m+[0m[0m arn              = (known after apply)
+      [32m+[0m[0m id               = (known after apply)
+      [32m+[0m[0m owner_id         = (known after apply)
+      [32m+[0m[0m propagating_vgws = (known after apply)
+      [32m+[0m[0m region           = "us-west-2"
+      [32m+[0m[0m route            = (known after apply)
+      [32m+[0m[0m tags             = {
+          [32m+[0m[0m "Name" = "RT-NADTC04-A-DATA-INGESTION-APP1"
+        }
+      [32m+[0m[0m tags_all         = {
+          [32m+[0m[0m "Name" = "RT-NADTC04-A-DATA-INGESTION-APP1"
+        }
+      [32m+[0m[0m vpc_id           = "vpc-033cd5988ec6fc32f"
+    }
+
+[1m  # module.route_tables.aws_route_table.rt["SUB-NADTC04-A-DATA-INGESTION-EXT-MGMT1"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route_table" "rt" {
+      [32m+[0m[0m arn              = (known after apply)
+      [32m+[0m[0m id               = (known after apply)
+      [32m+[0m[0m owner_id         = (known after apply)
+      [32m+[0m[0m propagating_vgws = (known after apply)
+      [32m+[0m[0m region           = "us-west-2"
+      [32m+[0m[0m route            = (known after apply)
+      [32m+[0m[0m tags             = {
+          [32m+[0m[0m "Name" = "RT-NADTC04-B-DATA-INGESTION-MGMT1"
+        }
+      [32m+[0m[0m tags_all         = {
+          [32m+[0m[0m "Name" = "RT-NADTC04-B-DATA-INGESTION-MGMT1"
+        }
+      [32m+[0m[0m vpc_id           = "vpc-033cd5988ec6fc32f"
+    }
+
+[1m  # module.route_tables.aws_route_table.rt["SUB-NADTC04-A-DATA-INGESTION-EXT-TGW1"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route_table" "rt" {
+      [32m+[0m[0m arn              = (known after apply)
+      [32m+[0m[0m id               = (known after apply)
+      [32m+[0m[0m owner_id         = (known after apply)
+      [32m+[0m[0m propagating_vgws = (known after apply)
+      [32m+[0m[0m region           = "us-west-2"
+      [32m+[0m[0m route            = (known after apply)
+      [32m+[0m[0m tags             = {
+          [32m+[0m[0m "Name" = "RT-NADTC04-B-DATA-INGESTION-TGW1"
+        }
+      [32m+[0m[0m tags_all         = {
+          [32m+[0m[0m "Name" = "RT-NADTC04-B-DATA-INGESTION-TGW1"
+        }
+      [32m+[0m[0m vpc_id           = "vpc-033cd5988ec6fc32f"
+    }
+
+[1m  # module.route_tables.aws_route_table.rt["SUB-NADTC04-A-Data-Ingestion-EXT-APP1"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-A-Data-Ingestion-EXT-APP1"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route_table" "rt" {
+      [31m-[0m[0m arn              = "arn:aws:ec2:us-west-2:584034200831:route-table/rtb-010d201c4258cb9d8" [90m-> null[0m[0m
+      [31m-[0m[0m id               = "rtb-010d201c4258cb9d8" [90m-> null[0m[0m
+      [31m-[0m[0m owner_id         = "584034200831" [90m-> null[0m[0m
+      [31m-[0m[0m propagating_vgws = [] [90m-> null[0m[0m
+      [31m-[0m[0m region           = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route            = [
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_block                 = "10.0.0.0/8"
+              [31m-[0m[0m transit_gateway_id         = "tgw-0058b410c08c6789e"
+                [90m# (11 unchanged attributes hidden)[0m[0m
+            },
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_block                 = "172.16.0.0/12"
+              [31m-[0m[0m transit_gateway_id         = "tgw-0058b410c08c6789e"
+                [90m# (11 unchanged attributes hidden)[0m[0m
+            },
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_block                 = "192.168.0.0/16"
+              [31m-[0m[0m transit_gateway_id         = "tgw-0058b410c08c6789e"
+                [90m# (11 unchanged attributes hidden)[0m[0m
+            },
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m tags             = {
+          [31m-[0m[0m "Name" = "RT-NADTC04-A-Data-Ingestion-APP1"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all         = {
+          [31m-[0m[0m "Name" = "RT-NADTC04-A-Data-Ingestion-APP1"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m vpc_id           = "vpc-033cd5988ec6fc32f" [90m-> null[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route_table.rt["SUB-NADTC04-A-Data-Ingestion-EXT-MGMT1"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-A-Data-Ingestion-EXT-MGMT1"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route_table" "rt" {
+      [31m-[0m[0m arn              = "arn:aws:ec2:us-west-2:584034200831:route-table/rtb-0a8d7d6bc329602d4" [90m-> null[0m[0m
+      [31m-[0m[0m id               = "rtb-0a8d7d6bc329602d4" [90m-> null[0m[0m
+      [31m-[0m[0m owner_id         = "584034200831" [90m-> null[0m[0m
+      [31m-[0m[0m propagating_vgws = [] [90m-> null[0m[0m
+      [31m-[0m[0m region           = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route            = [
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_block                 = "10.0.0.0/8"
+              [31m-[0m[0m transit_gateway_id         = "tgw-0058b410c08c6789e"
+                [90m# (11 unchanged attributes hidden)[0m[0m
+            },
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_block                 = "172.16.0.0/12"
+              [31m-[0m[0m transit_gateway_id         = "tgw-0058b410c08c6789e"
+                [90m# (11 unchanged attributes hidden)[0m[0m
+            },
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_block                 = "192.168.0.0/16"
+              [31m-[0m[0m transit_gateway_id         = "tgw-0058b410c08c6789e"
+                [90m# (11 unchanged attributes hidden)[0m[0m
+            },
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m tags             = {
+          [31m-[0m[0m "Name" = "RT-NADTC04-B-Data-Ingestion-MGMT1"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all         = {
+          [31m-[0m[0m "Name" = "RT-NADTC04-B-Data-Ingestion-MGMT1"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m vpc_id           = "vpc-033cd5988ec6fc32f" [90m-> null[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route_table.rt["SUB-NADTC04-A-Data-Ingestion-EXT-TGW1"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-A-Data-Ingestion-EXT-TGW1"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route_table" "rt" {
+      [31m-[0m[0m arn              = "arn:aws:ec2:us-west-2:584034200831:route-table/rtb-0ac2024b798192ce6" [90m-> null[0m[0m
+      [31m-[0m[0m id               = "rtb-0ac2024b798192ce6" [90m-> null[0m[0m
+      [31m-[0m[0m owner_id         = "584034200831" [90m-> null[0m[0m
+      [31m-[0m[0m propagating_vgws = [] [90m-> null[0m[0m
+      [31m-[0m[0m region           = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route            = [
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_block                 = "10.0.0.0/8"
+              [31m-[0m[0m transit_gateway_id         = "tgw-0058b410c08c6789e"
+                [90m# (11 unchanged attributes hidden)[0m[0m
+            },
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_block                 = "172.16.0.0/12"
+              [31m-[0m[0m transit_gateway_id         = "tgw-0058b410c08c6789e"
+                [90m# (11 unchanged attributes hidden)[0m[0m
+            },
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_block                 = "192.168.0.0/16"
+              [31m-[0m[0m transit_gateway_id         = "tgw-0058b410c08c6789e"
+                [90m# (11 unchanged attributes hidden)[0m[0m
+            },
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m tags             = {
+          [31m-[0m[0m "Name" = "RT-NADTC04-B-Data-Ingestion-TGW1"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all         = {
+          [31m-[0m[0m "Name" = "RT-NADTC04-B-Data-Ingestion-TGW1"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m vpc_id           = "vpc-033cd5988ec6fc32f" [90m-> null[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route_table.rt["SUB-NADTC04-B-DATA-INGESTION-EXT-APP1"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route_table" "rt" {
+      [32m+[0m[0m arn              = (known after apply)
+      [32m+[0m[0m id               = (known after apply)
+      [32m+[0m[0m owner_id         = (known after apply)
+      [32m+[0m[0m propagating_vgws = (known after apply)
+      [32m+[0m[0m region           = "us-west-2"
+      [32m+[0m[0m route            = (known after apply)
+      [32m+[0m[0m tags             = {
+          [32m+[0m[0m "Name" = "RT-NADTC04-B-DATA-INGESTION-APP1"
+        }
+      [32m+[0m[0m tags_all         = {
+          [32m+[0m[0m "Name" = "RT-NADTC04-B-DATA-INGESTION-APP1"
+        }
+      [32m+[0m[0m vpc_id           = "vpc-033cd5988ec6fc32f"
+    }
+
+[1m  # module.route_tables.aws_route_table.rt["SUB-NADTC04-B-DATA-INGESTION-EXT-MGMT1"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route_table" "rt" {
+      [32m+[0m[0m arn              = (known after apply)
+      [32m+[0m[0m id               = (known after apply)
+      [32m+[0m[0m owner_id         = (known after apply)
+      [32m+[0m[0m propagating_vgws = (known after apply)
+      [32m+[0m[0m region           = "us-west-2"
+      [32m+[0m[0m route            = (known after apply)
+      [32m+[0m[0m tags             = {
+          [32m+[0m[0m "Name" = "RT-NADTC04-B-DATA-INGESTION-MGMT1"
+        }
+      [32m+[0m[0m tags_all         = {
+          [32m+[0m[0m "Name" = "RT-NADTC04-B-DATA-INGESTION-MGMT1"
+        }
+      [32m+[0m[0m vpc_id           = "vpc-033cd5988ec6fc32f"
+    }
+
+[1m  # module.route_tables.aws_route_table.rt["SUB-NADTC04-B-DATA-INGESTION-EXT-TGW1"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route_table" "rt" {
+      [32m+[0m[0m arn              = (known after apply)
+      [32m+[0m[0m id               = (known after apply)
+      [32m+[0m[0m owner_id         = (known after apply)
+      [32m+[0m[0m propagating_vgws = (known after apply)
+      [32m+[0m[0m region           = "us-west-2"
+      [32m+[0m[0m route            = (known after apply)
+      [32m+[0m[0m tags             = {
+          [32m+[0m[0m "Name" = "RT-NADTC04-B-DATA-INGESTION-TGW1"
+        }
+      [32m+[0m[0m tags_all         = {
+          [32m+[0m[0m "Name" = "RT-NADTC04-B-DATA-INGESTION-TGW1"
+        }
+      [32m+[0m[0m vpc_id           = "vpc-033cd5988ec6fc32f"
+    }
+
+[1m  # module.route_tables.aws_route_table.rt["SUB-NADTC04-B-Data-Ingestion-EXT-APP1"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-B-Data-Ingestion-EXT-APP1"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route_table" "rt" {
+      [31m-[0m[0m arn              = "arn:aws:ec2:us-west-2:584034200831:route-table/rtb-0399cf30935f2a2a2" [90m-> null[0m[0m
+      [31m-[0m[0m id               = "rtb-0399cf30935f2a2a2" [90m-> null[0m[0m
+      [31m-[0m[0m owner_id         = "584034200831" [90m-> null[0m[0m
+      [31m-[0m[0m propagating_vgws = [] [90m-> null[0m[0m
+      [31m-[0m[0m region           = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route            = [
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_block                 = "10.0.0.0/8"
+              [31m-[0m[0m transit_gateway_id         = "tgw-0058b410c08c6789e"
+                [90m# (11 unchanged attributes hidden)[0m[0m
+            },
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_block                 = "172.16.0.0/12"
+              [31m-[0m[0m transit_gateway_id         = "tgw-0058b410c08c6789e"
+                [90m# (11 unchanged attributes hidden)[0m[0m
+            },
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_block                 = "192.168.0.0/16"
+              [31m-[0m[0m transit_gateway_id         = "tgw-0058b410c08c6789e"
+                [90m# (11 unchanged attributes hidden)[0m[0m
+            },
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m tags             = {
+          [31m-[0m[0m "Name" = "RT-NADTC04-B-Data-Ingestion-APP1"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all         = {
+          [31m-[0m[0m "Name" = "RT-NADTC04-B-Data-Ingestion-APP1"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m vpc_id           = "vpc-033cd5988ec6fc32f" [90m-> null[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route_table.rt["SUB-NADTC04-B-Data-Ingestion-EXT-MGMT1"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-B-Data-Ingestion-EXT-MGMT1"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route_table" "rt" {
+      [31m-[0m[0m arn              = "arn:aws:ec2:us-west-2:584034200831:route-table/rtb-0fcd6f0996b2237bf" [90m-> null[0m[0m
+      [31m-[0m[0m id               = "rtb-0fcd6f0996b2237bf" [90m-> null[0m[0m
+      [31m-[0m[0m owner_id         = "584034200831" [90m-> null[0m[0m
+      [31m-[0m[0m propagating_vgws = [] [90m-> null[0m[0m
+      [31m-[0m[0m region           = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route            = [
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_block                 = "10.0.0.0/8"
+              [31m-[0m[0m transit_gateway_id         = "tgw-0058b410c08c6789e"
+                [90m# (11 unchanged attributes hidden)[0m[0m
+            },
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_block                 = "172.16.0.0/12"
+              [31m-[0m[0m transit_gateway_id         = "tgw-0058b410c08c6789e"
+                [90m# (11 unchanged attributes hidden)[0m[0m
+            },
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_block                 = "192.168.0.0/16"
+              [31m-[0m[0m transit_gateway_id         = "tgw-0058b410c08c6789e"
+                [90m# (11 unchanged attributes hidden)[0m[0m
+            },
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m tags             = {
+          [31m-[0m[0m "Name" = "RT-NADTC04-B-Data-Ingestion-MGMT1"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all         = {
+          [31m-[0m[0m "Name" = "RT-NADTC04-B-Data-Ingestion-MGMT1"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m vpc_id           = "vpc-033cd5988ec6fc32f" [90m-> null[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route_table.rt["SUB-NADTC04-B-Data-Ingestion-EXT-TGW1"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-B-Data-Ingestion-EXT-TGW1"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route_table" "rt" {
+      [31m-[0m[0m arn              = "arn:aws:ec2:us-west-2:584034200831:route-table/rtb-0cb25a514d313e3db" [90m-> null[0m[0m
+      [31m-[0m[0m id               = "rtb-0cb25a514d313e3db" [90m-> null[0m[0m
+      [31m-[0m[0m owner_id         = "584034200831" [90m-> null[0m[0m
+      [31m-[0m[0m propagating_vgws = [] [90m-> null[0m[0m
+      [31m-[0m[0m region           = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route            = [
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_block                 = "10.0.0.0/8"
+              [31m-[0m[0m transit_gateway_id         = "tgw-0058b410c08c6789e"
+                [90m# (11 unchanged attributes hidden)[0m[0m
+            },
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_block                 = "172.16.0.0/12"
+              [31m-[0m[0m transit_gateway_id         = "tgw-0058b410c08c6789e"
+                [90m# (11 unchanged attributes hidden)[0m[0m
+            },
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_block                 = "192.168.0.0/16"
+              [31m-[0m[0m transit_gateway_id         = "tgw-0058b410c08c6789e"
+                [90m# (11 unchanged attributes hidden)[0m[0m
+            },
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m tags             = {
+          [31m-[0m[0m "Name" = "RT-NADTC04-B-Data-Ingestion-TGW1"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all         = {
+          [31m-[0m[0m "Name" = "RT-NADTC04-B-Data-Ingestion-TGW1"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m vpc_id           = "vpc-033cd5988ec6fc32f" [90m-> null[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route_table.rt["SUB-NADTC04-C-DATA-INGESTION-EXT-APP1"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route_table" "rt" {
+      [32m+[0m[0m arn              = (known after apply)
+      [32m+[0m[0m id               = (known after apply)
+      [32m+[0m[0m owner_id         = (known after apply)
+      [32m+[0m[0m propagating_vgws = (known after apply)
+      [32m+[0m[0m region           = "us-west-2"
+      [32m+[0m[0m route            = (known after apply)
+      [32m+[0m[0m tags             = {
+          [32m+[0m[0m "Name" = "RT-NADTC04-C-DATA-INGESTION-APP1"
+        }
+      [32m+[0m[0m tags_all         = {
+          [32m+[0m[0m "Name" = "RT-NADTC04-C-DATA-INGESTION-APP1"
+        }
+      [32m+[0m[0m vpc_id           = "vpc-033cd5988ec6fc32f"
+    }
+
+[1m  # module.route_tables.aws_route_table.rt["SUB-NADTC04-C-DATA-INGESTION-EXT-MGMT1"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route_table" "rt" {
+      [32m+[0m[0m arn              = (known after apply)
+      [32m+[0m[0m id               = (known after apply)
+      [32m+[0m[0m owner_id         = (known after apply)
+      [32m+[0m[0m propagating_vgws = (known after apply)
+      [32m+[0m[0m region           = "us-west-2"
+      [32m+[0m[0m route            = (known after apply)
+      [32m+[0m[0m tags             = {
+          [32m+[0m[0m "Name" = "RT-NADTC04-B-DATA-INGESTION-MGMT1"
+        }
+      [32m+[0m[0m tags_all         = {
+          [32m+[0m[0m "Name" = "RT-NADTC04-B-DATA-INGESTION-MGMT1"
+        }
+      [32m+[0m[0m vpc_id           = "vpc-033cd5988ec6fc32f"
+    }
+
+[1m  # module.route_tables.aws_route_table.rt["SUB-NADTC04-C-DATA-INGESTION-EXT-TGW1"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route_table" "rt" {
+      [32m+[0m[0m arn              = (known after apply)
+      [32m+[0m[0m id               = (known after apply)
+      [32m+[0m[0m owner_id         = (known after apply)
+      [32m+[0m[0m propagating_vgws = (known after apply)
+      [32m+[0m[0m region           = "us-west-2"
+      [32m+[0m[0m route            = (known after apply)
+      [32m+[0m[0m tags             = {
+          [32m+[0m[0m "Name" = "RT-NADTC04-B-DATA-INGESTION-TGW1"
+        }
+      [32m+[0m[0m tags_all         = {
+          [32m+[0m[0m "Name" = "RT-NADTC04-B-DATA-INGESTION-TGW1"
+        }
+      [32m+[0m[0m vpc_id           = "vpc-033cd5988ec6fc32f"
+    }
+
+[1m  # module.route_tables.aws_route_table.rt["SUB-NADTC04-C-Data-Ingestion-EXT-APP1"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-C-Data-Ingestion-EXT-APP1"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route_table" "rt" {
+      [31m-[0m[0m arn              = "arn:aws:ec2:us-west-2:584034200831:route-table/rtb-00b6ba4a72894aa13" [90m-> null[0m[0m
+      [31m-[0m[0m id               = "rtb-00b6ba4a72894aa13" [90m-> null[0m[0m
+      [31m-[0m[0m owner_id         = "584034200831" [90m-> null[0m[0m
+      [31m-[0m[0m propagating_vgws = [] [90m-> null[0m[0m
+      [31m-[0m[0m region           = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route            = [
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_block                 = "10.0.0.0/8"
+              [31m-[0m[0m transit_gateway_id         = "tgw-0058b410c08c6789e"
+                [90m# (11 unchanged attributes hidden)[0m[0m
+            },
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_block                 = "172.16.0.0/12"
+              [31m-[0m[0m transit_gateway_id         = "tgw-0058b410c08c6789e"
+                [90m# (11 unchanged attributes hidden)[0m[0m
+            },
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_block                 = "192.168.0.0/16"
+              [31m-[0m[0m transit_gateway_id         = "tgw-0058b410c08c6789e"
+                [90m# (11 unchanged attributes hidden)[0m[0m
+            },
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m tags             = {
+          [31m-[0m[0m "Name" = "RT-NADTC04-C-Data-Ingestion-APP1"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all         = {
+          [31m-[0m[0m "Name" = "RT-NADTC04-C-Data-Ingestion-APP1"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m vpc_id           = "vpc-033cd5988ec6fc32f" [90m-> null[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route_table.rt["SUB-NADTC04-C-Data-Ingestion-EXT-MGMT1"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-C-Data-Ingestion-EXT-MGMT1"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route_table" "rt" {
+      [31m-[0m[0m arn              = "arn:aws:ec2:us-west-2:584034200831:route-table/rtb-07342afb8d53c5e8c" [90m-> null[0m[0m
+      [31m-[0m[0m id               = "rtb-07342afb8d53c5e8c" [90m-> null[0m[0m
+      [31m-[0m[0m owner_id         = "584034200831" [90m-> null[0m[0m
+      [31m-[0m[0m propagating_vgws = [] [90m-> null[0m[0m
+      [31m-[0m[0m region           = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route            = [
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_block                 = "10.0.0.0/8"
+              [31m-[0m[0m transit_gateway_id         = "tgw-0058b410c08c6789e"
+                [90m# (11 unchanged attributes hidden)[0m[0m
+            },
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_block                 = "172.16.0.0/12"
+              [31m-[0m[0m transit_gateway_id         = "tgw-0058b410c08c6789e"
+                [90m# (11 unchanged attributes hidden)[0m[0m
+            },
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_block                 = "192.168.0.0/16"
+              [31m-[0m[0m transit_gateway_id         = "tgw-0058b410c08c6789e"
+                [90m# (11 unchanged attributes hidden)[0m[0m
+            },
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m tags             = {
+          [31m-[0m[0m "Name" = "RT-NADTC04-B-Data-Ingestion-MGMT1"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all         = {
+          [31m-[0m[0m "Name" = "RT-NADTC04-B-Data-Ingestion-MGMT1"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m vpc_id           = "vpc-033cd5988ec6fc32f" [90m-> null[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route_table.rt["SUB-NADTC04-C-Data-Ingestion-EXT-TGW1"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-C-Data-Ingestion-EXT-TGW1"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route_table" "rt" {
+      [31m-[0m[0m arn              = "arn:aws:ec2:us-west-2:584034200831:route-table/rtb-0efdb4a3078d3d3a9" [90m-> null[0m[0m
+      [31m-[0m[0m id               = "rtb-0efdb4a3078d3d3a9" [90m-> null[0m[0m
+      [31m-[0m[0m owner_id         = "584034200831" [90m-> null[0m[0m
+      [31m-[0m[0m propagating_vgws = [] [90m-> null[0m[0m
+      [31m-[0m[0m region           = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route            = [
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_block                 = "10.0.0.0/8"
+              [31m-[0m[0m transit_gateway_id         = "tgw-0058b410c08c6789e"
+                [90m# (11 unchanged attributes hidden)[0m[0m
+            },
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_block                 = "172.16.0.0/12"
+              [31m-[0m[0m transit_gateway_id         = "tgw-0058b410c08c6789e"
+                [90m# (11 unchanged attributes hidden)[0m[0m
+            },
+          [31m-[0m[0m {
+              [31m-[0m[0m cidr_block                 = "192.168.0.0/16"
+              [31m-[0m[0m transit_gateway_id         = "tgw-0058b410c08c6789e"
+                [90m# (11 unchanged attributes hidden)[0m[0m
+            },
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m tags             = {
+          [31m-[0m[0m "Name" = "RT-NADTC04-B-Data-Ingestion-TGW1"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m tags_all         = {
+          [31m-[0m[0m "Name" = "RT-NADTC04-B-Data-Ingestion-TGW1"
+        } [90m-> null[0m[0m
+      [31m-[0m[0m vpc_id           = "vpc-033cd5988ec6fc32f" [90m-> null[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route_table_association.assoc["SUB-NADTC04-A-DATA-INGESTION-EXT-APP1"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route_table_association" "assoc" {
+      [32m+[0m[0m id             = (known after apply)
+      [32m+[0m[0m region         = "us-west-2"
+      [32m+[0m[0m route_table_id = (known after apply)
+      [32m+[0m[0m subnet_id      = "subnet-0eecf62f4e6edde85"
+    }
+
+[1m  # module.route_tables.aws_route_table_association.assoc["SUB-NADTC04-A-DATA-INGESTION-EXT-MGMT1"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route_table_association" "assoc" {
+      [32m+[0m[0m id             = (known after apply)
+      [32m+[0m[0m region         = "us-west-2"
+      [32m+[0m[0m route_table_id = (known after apply)
+      [32m+[0m[0m subnet_id      = "subnet-0ca588cf486d3d94f"
+    }
+
+[1m  # module.route_tables.aws_route_table_association.assoc["SUB-NADTC04-A-DATA-INGESTION-EXT-TGW1"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route_table_association" "assoc" {
+      [32m+[0m[0m id             = (known after apply)
+      [32m+[0m[0m region         = "us-west-2"
+      [32m+[0m[0m route_table_id = (known after apply)
+      [32m+[0m[0m subnet_id      = "subnet-06c774e859f195ca1"
+    }
+
+[1m  # module.route_tables.aws_route_table_association.assoc["SUB-NADTC04-A-Data-Ingestion-EXT-APP1"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-A-Data-Ingestion-EXT-APP1"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route_table_association" "assoc" {
+      [31m-[0m[0m id             = "rtbassoc-0c2bf584522664cf4" [90m-> null[0m[0m
+      [31m-[0m[0m region         = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route_table_id = "rtb-010d201c4258cb9d8" [90m-> null[0m[0m
+      [31m-[0m[0m subnet_id      = "subnet-0eecf62f4e6edde85" [90m-> null[0m[0m
+        [90m# (1 unchanged attribute hidden)[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route_table_association.assoc["SUB-NADTC04-A-Data-Ingestion-EXT-MGMT1"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-A-Data-Ingestion-EXT-MGMT1"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route_table_association" "assoc" {
+      [31m-[0m[0m id             = "rtbassoc-0864d1452f31a706a" [90m-> null[0m[0m
+      [31m-[0m[0m region         = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route_table_id = "rtb-0a8d7d6bc329602d4" [90m-> null[0m[0m
+      [31m-[0m[0m subnet_id      = "subnet-0ca588cf486d3d94f" [90m-> null[0m[0m
+        [90m# (1 unchanged attribute hidden)[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route_table_association.assoc["SUB-NADTC04-A-Data-Ingestion-EXT-TGW1"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-A-Data-Ingestion-EXT-TGW1"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route_table_association" "assoc" {
+      [31m-[0m[0m id             = "rtbassoc-017cf6efe03643116" [90m-> null[0m[0m
+      [31m-[0m[0m region         = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route_table_id = "rtb-0ac2024b798192ce6" [90m-> null[0m[0m
+      [31m-[0m[0m subnet_id      = "subnet-06c774e859f195ca1" [90m-> null[0m[0m
+        [90m# (1 unchanged attribute hidden)[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route_table_association.assoc["SUB-NADTC04-B-DATA-INGESTION-EXT-APP1"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route_table_association" "assoc" {
+      [32m+[0m[0m id             = (known after apply)
+      [32m+[0m[0m region         = "us-west-2"
+      [32m+[0m[0m route_table_id = (known after apply)
+      [32m+[0m[0m subnet_id      = "subnet-062f52fc89bba1f35"
+    }
+
+[1m  # module.route_tables.aws_route_table_association.assoc["SUB-NADTC04-B-DATA-INGESTION-EXT-MGMT1"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route_table_association" "assoc" {
+      [32m+[0m[0m id             = (known after apply)
+      [32m+[0m[0m region         = "us-west-2"
+      [32m+[0m[0m route_table_id = (known after apply)
+      [32m+[0m[0m subnet_id      = "subnet-0740481afd8e5478e"
+    }
+
+[1m  # module.route_tables.aws_route_table_association.assoc["SUB-NADTC04-B-DATA-INGESTION-EXT-TGW1"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route_table_association" "assoc" {
+      [32m+[0m[0m id             = (known after apply)
+      [32m+[0m[0m region         = "us-west-2"
+      [32m+[0m[0m route_table_id = (known after apply)
+      [32m+[0m[0m subnet_id      = "subnet-0e7bde1ef466fd5ad"
+    }
+
+[1m  # module.route_tables.aws_route_table_association.assoc["SUB-NADTC04-B-Data-Ingestion-EXT-APP1"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-B-Data-Ingestion-EXT-APP1"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route_table_association" "assoc" {
+      [31m-[0m[0m id             = "rtbassoc-08f1338069f0df832" [90m-> null[0m[0m
+      [31m-[0m[0m region         = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route_table_id = "rtb-0399cf30935f2a2a2" [90m-> null[0m[0m
+      [31m-[0m[0m subnet_id      = "subnet-062f52fc89bba1f35" [90m-> null[0m[0m
+        [90m# (1 unchanged attribute hidden)[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route_table_association.assoc["SUB-NADTC04-B-Data-Ingestion-EXT-MGMT1"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-B-Data-Ingestion-EXT-MGMT1"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route_table_association" "assoc" {
+      [31m-[0m[0m id             = "rtbassoc-00f6a4a732f314291" [90m-> null[0m[0m
+      [31m-[0m[0m region         = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route_table_id = "rtb-0fcd6f0996b2237bf" [90m-> null[0m[0m
+      [31m-[0m[0m subnet_id      = "subnet-0740481afd8e5478e" [90m-> null[0m[0m
+        [90m# (1 unchanged attribute hidden)[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route_table_association.assoc["SUB-NADTC04-B-Data-Ingestion-EXT-TGW1"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-B-Data-Ingestion-EXT-TGW1"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route_table_association" "assoc" {
+      [31m-[0m[0m id             = "rtbassoc-01fb994c3e3a84395" [90m-> null[0m[0m
+      [31m-[0m[0m region         = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route_table_id = "rtb-0cb25a514d313e3db" [90m-> null[0m[0m
+      [31m-[0m[0m subnet_id      = "subnet-0e7bde1ef466fd5ad" [90m-> null[0m[0m
+        [90m# (1 unchanged attribute hidden)[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route_table_association.assoc["SUB-NADTC04-C-DATA-INGESTION-EXT-APP1"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route_table_association" "assoc" {
+      [32m+[0m[0m id             = (known after apply)
+      [32m+[0m[0m region         = "us-west-2"
+      [32m+[0m[0m route_table_id = (known after apply)
+      [32m+[0m[0m subnet_id      = "subnet-0d63bcec0ecbaada0"
+    }
+
+[1m  # module.route_tables.aws_route_table_association.assoc["SUB-NADTC04-C-DATA-INGESTION-EXT-MGMT1"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route_table_association" "assoc" {
+      [32m+[0m[0m id             = (known after apply)
+      [32m+[0m[0m region         = "us-west-2"
+      [32m+[0m[0m route_table_id = (known after apply)
+      [32m+[0m[0m subnet_id      = "subnet-085f4864fc41d3801"
+    }
+
+[1m  # module.route_tables.aws_route_table_association.assoc["SUB-NADTC04-C-DATA-INGESTION-EXT-TGW1"][0m will be created
+[0m  [32m+[0m[0m resource "aws_route_table_association" "assoc" {
+      [32m+[0m[0m id             = (known after apply)
+      [32m+[0m[0m region         = "us-west-2"
+      [32m+[0m[0m route_table_id = (known after apply)
+      [32m+[0m[0m subnet_id      = "subnet-0464d156d7caa722d"
+    }
+
+[1m  # module.route_tables.aws_route_table_association.assoc["SUB-NADTC04-C-Data-Ingestion-EXT-APP1"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-C-Data-Ingestion-EXT-APP1"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route_table_association" "assoc" {
+      [31m-[0m[0m id             = "rtbassoc-0f8290ae24ce31ee7" [90m-> null[0m[0m
+      [31m-[0m[0m region         = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route_table_id = "rtb-00b6ba4a72894aa13" [90m-> null[0m[0m
+      [31m-[0m[0m subnet_id      = "subnet-0d63bcec0ecbaada0" [90m-> null[0m[0m
+        [90m# (1 unchanged attribute hidden)[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route_table_association.assoc["SUB-NADTC04-C-Data-Ingestion-EXT-MGMT1"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-C-Data-Ingestion-EXT-MGMT1"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route_table_association" "assoc" {
+      [31m-[0m[0m id             = "rtbassoc-0b4f488befd08348d" [90m-> null[0m[0m
+      [31m-[0m[0m region         = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route_table_id = "rtb-07342afb8d53c5e8c" [90m-> null[0m[0m
+      [31m-[0m[0m subnet_id      = "subnet-085f4864fc41d3801" [90m-> null[0m[0m
+        [90m# (1 unchanged attribute hidden)[0m[0m
+    }
+
+[1m  # module.route_tables.aws_route_table_association.assoc["SUB-NADTC04-C-Data-Ingestion-EXT-TGW1"][0m will be [1m[31mdestroyed[0m
+  # (because key ["SUB-NADTC04-C-Data-Ingestion-EXT-TGW1"] is not in for_each map)
+[0m  [31m-[0m[0m resource "aws_route_table_association" "assoc" {
+      [31m-[0m[0m id             = "rtbassoc-0b74a374f7f748324" [90m-> null[0m[0m
+      [31m-[0m[0m region         = "us-west-2" [90m-> null[0m[0m
+      [31m-[0m[0m route_table_id = "rtb-0efdb4a3078d3d3a9" [90m-> null[0m[0m
+      [31m-[0m[0m subnet_id      = "subnet-0464d156d7caa722d" [90m-> null[0m[0m
+        [90m# (1 unchanged attribute hidden)[0m[0m
+    }
+
+[1m  # module.subnets.aws_subnet.this["10.128.10.0/26"][0m will be updated in-place
+[0m  [33m~[0m[0m resource "aws_subnet" "this" {
+        id                                             = "subnet-0eecf62f4e6edde85"
+      [33m~[0m[0m tags                                           = {
+          [33m~[0m[0m "Name" = "SUB-NADTC04-A-Data-Ingestion-EXT-APP1" [33m->[0m[0m "SUB-NADTC04-A-DATA-INGESTION-EXT-APP1"
+        }
+      [33m~[0m[0m tags_all                                       = {
+          [33m~[0m[0m "Name" = "SUB-NADTC04-A-Data-Ingestion-EXT-APP1" [33m->[0m[0m "SUB-NADTC04-A-DATA-INGESTION-EXT-APP1"
+        }
+        [90m# (20 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.subnets.aws_subnet.this["10.128.10.128/26"][0m will be updated in-place
+[0m  [33m~[0m[0m resource "aws_subnet" "this" {
+        id                                             = "subnet-0d63bcec0ecbaada0"
+      [33m~[0m[0m tags                                           = {
+          [33m~[0m[0m "Name" = "SUB-NADTC04-C-Data-Ingestion-EXT-APP1" [33m->[0m[0m "SUB-NADTC04-C-DATA-INGESTION-EXT-APP1"
+        }
+      [33m~[0m[0m tags_all                                       = {
+          [33m~[0m[0m "Name" = "SUB-NADTC04-C-Data-Ingestion-EXT-APP1" [33m->[0m[0m "SUB-NADTC04-C-DATA-INGESTION-EXT-APP1"
+        }
+        [90m# (20 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.subnets.aws_subnet.this["10.128.10.192/27"][0m will be updated in-place
+[0m  [33m~[0m[0m resource "aws_subnet" "this" {
+        id                                             = "subnet-0ca588cf486d3d94f"
+      [33m~[0m[0m tags                                           = {
+          [33m~[0m[0m "Name" = "SUB-NADTC04-A-Data-Ingestion-EXT-MGMT1" [33m->[0m[0m "SUB-NADTC04-A-DATA-INGESTION-EXT-MGMT1"
+        }
+      [33m~[0m[0m tags_all                                       = {
+          [33m~[0m[0m "Name" = "SUB-NADTC04-A-Data-Ingestion-EXT-MGMT1" [33m->[0m[0m "SUB-NADTC04-A-DATA-INGESTION-EXT-MGMT1"
+        }
+        [90m# (20 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.subnets.aws_subnet.this["10.128.10.224/27"][0m will be updated in-place
+[0m  [33m~[0m[0m resource "aws_subnet" "this" {
+        id                                             = "subnet-0740481afd8e5478e"
+      [33m~[0m[0m tags                                           = {
+          [33m~[0m[0m "Name" = "SUB-NADTC04-B-Data-Ingestion-EXT-MGMT1" [33m->[0m[0m "SUB-NADTC04-B-DATA-INGESTION-EXT-MGMT1"
+        }
+      [33m~[0m[0m tags_all                                       = {
+          [33m~[0m[0m "Name" = "SUB-NADTC04-B-Data-Ingestion-EXT-MGMT1" [33m->[0m[0m "SUB-NADTC04-B-DATA-INGESTION-EXT-MGMT1"
+        }
+        [90m# (20 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.subnets.aws_subnet.this["10.128.10.64/26"][0m will be updated in-place
+[0m  [33m~[0m[0m resource "aws_subnet" "this" {
+        id                                             = "subnet-062f52fc89bba1f35"
+      [33m~[0m[0m tags                                           = {
+          [33m~[0m[0m "Name" = "SUB-NADTC04-B-Data-Ingestion-EXT-APP1" [33m->[0m[0m "SUB-NADTC04-B-DATA-INGESTION-EXT-APP1"
+        }
+      [33m~[0m[0m tags_all                                       = {
+          [33m~[0m[0m "Name" = "SUB-NADTC04-B-Data-Ingestion-EXT-APP1" [33m->[0m[0m "SUB-NADTC04-B-DATA-INGESTION-EXT-APP1"
+        }
+        [90m# (20 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.subnets.aws_subnet.this["10.128.11.0/27"][0m will be updated in-place
+[0m  [33m~[0m[0m resource "aws_subnet" "this" {
+        id                                             = "subnet-085f4864fc41d3801"
+      [33m~[0m[0m tags                                           = {
+          [33m~[0m[0m "Name" = "SUB-NADTC04-C-Data-Ingestion-EXT-MGMT1" [33m->[0m[0m "SUB-NADTC04-C-DATA-INGESTION-EXT-MGMT1"
+        }
+      [33m~[0m[0m tags_all                                       = {
+          [33m~[0m[0m "Name" = "SUB-NADTC04-C-Data-Ingestion-EXT-MGMT1" [33m->[0m[0m "SUB-NADTC04-C-DATA-INGESTION-EXT-MGMT1"
+        }
+        [90m# (20 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.subnets.aws_subnet.this["10.128.11.32/28"][0m will be updated in-place
+[0m  [33m~[0m[0m resource "aws_subnet" "this" {
+        id                                             = "subnet-06c774e859f195ca1"
+      [33m~[0m[0m tags                                           = {
+          [33m~[0m[0m "Name" = "SUB-NADTC04-A-Data-Ingestion-EXT-TGW1" [33m->[0m[0m "SUB-NADTC04-A-DATA-INGESTION-EXT-TGW1"
+        }
+      [33m~[0m[0m tags_all                                       = {
+          [33m~[0m[0m "Name" = "SUB-NADTC04-A-Data-Ingestion-EXT-TGW1" [33m->[0m[0m "SUB-NADTC04-A-DATA-INGESTION-EXT-TGW1"
+        }
+        [90m# (20 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.subnets.aws_subnet.this["10.128.11.48/28"][0m will be updated in-place
+[0m  [33m~[0m[0m resource "aws_subnet" "this" {
+        id                                             = "subnet-0e7bde1ef466fd5ad"
+      [33m~[0m[0m tags                                           = {
+          [33m~[0m[0m "Name" = "SUB-NADTC04-B-Data-Ingestion-EXT-TGW1" [33m->[0m[0m "SUB-NADTC04-B-DATA-INGESTION-EXT-TGW1"
+        }
+      [33m~[0m[0m tags_all                                       = {
+          [33m~[0m[0m "Name" = "SUB-NADTC04-B-Data-Ingestion-EXT-TGW1" [33m->[0m[0m "SUB-NADTC04-B-DATA-INGESTION-EXT-TGW1"
+        }
+        [90m# (20 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.subnets.aws_subnet.this["10.128.11.64/28"][0m will be updated in-place
+[0m  [33m~[0m[0m resource "aws_subnet" "this" {
+        id                                             = "subnet-0464d156d7caa722d"
+      [33m~[0m[0m tags                                           = {
+          [33m~[0m[0m "Name" = "SUB-NADTC04-C-Data-Ingestion-EXT-TGW1" [33m->[0m[0m "SUB-NADTC04-C-DATA-INGESTION-EXT-TGW1"
+        }
+      [33m~[0m[0m tags_all                                       = {
+          [33m~[0m[0m "Name" = "SUB-NADTC04-C-Data-Ingestion-EXT-TGW1" [33m->[0m[0m "SUB-NADTC04-C-DATA-INGESTION-EXT-TGW1"
+        }
+        [90m# (20 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.tgw_attachment.aws_ec2_transit_gateway_vpc_attachment.this[0m will be updated in-place
+[0m  [33m~[0m[0m resource "aws_ec2_transit_gateway_vpc_attachment" "this" {
+        id                                              = "tgw-attach-0c6dfc113d7817e35"
+      [33m~[0m[0m tags                                            = {
+          [33m~[0m[0m "Name" = "TGW-NADTC04-Data-Ingestion-EXT-Attachment" [33m->[0m[0m "TGW-NADTC04-DATA-INGESTION-EXT-Attachment"
+        }
+      [33m~[0m[0m tags_all                                        = {
+          [33m~[0m[0m "Name" = "TGW-NADTC04-Data-Ingestion-EXT-Attachment" [33m->[0m[0m "TGW-NADTC04-DATA-INGESTION-EXT-Attachment"
+        }
+        [90m# (12 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.vpc.aws_vpc.this[0m will be updated in-place
+[0m  [33m~[0m[0m resource "aws_vpc" "this" {
+        id                                   = "vpc-033cd5988ec6fc32f"
+      [33m~[0m[0m tags                                 = {
+          [33m~[0m[0m "Name" = "VPC-NADTC04-Data-Ingestion-EXT" [33m->[0m[0m "VPC-NADTC04-DATA-INGESTION-EXT"
+        }
+      [33m~[0m[0m tags_all                             = {
+          [33m~[0m[0m "Name" = "VPC-NADTC04-Data-Ingestion-EXT" [33m->[0m[0m "VPC-NADTC04-DATA-INGESTION-EXT"
+        }
+        [90m# (19 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.vpc_flow_logs.aws_flow_log.vpc_flow_logs[0m must be [1m[31mreplaced[0m
+[0m[31m-[0m/[32m+[0m[0m resource "aws_flow_log" "vpc_flow_logs" {
+      [33m~[0m[0m arn                        = "arn:aws:ec2:us-west-2:584034200831:vpc-flow-log/fl-0614de79503afe9e1" -> (known after apply)
+      [33m~[0m[0m iam_role_arn               = "arn:aws:iam::584034200831:role/NADTC04-Data-Ingestion-EXT-vpc-flow-logs-role" [31m# forces replacement[0m[0m -> (known after apply) [31m# forces replacement[0m[0m
+      [33m~[0m[0m id                         = "fl-0614de79503afe9e1" -> (known after apply)
+      [33m~[0m[0m log_format                 = "${version} ${account-id} ${interface-id} ${srcaddr} ${dstaddr} ${srcport} ${dstport} ${protocol} ${packets} ${bytes} ${start} ${end} ${action} ${log-status}" -> (known after apply)
+      [33m~[0m[0m tags                       = {
+          [33m~[0m[0m "Name" = "NADTC04-Data-Ingestion-EXT-vpc-flow-logs" [33m->[0m[0m "NADTC04-DATA-INGESTION-EXT-vpc-flow-logs"
+        }
+      [33m~[0m[0m tags_all                   = {
+          [33m~[0m[0m "Name" = "NADTC04-Data-Ingestion-EXT-vpc-flow-logs" [33m->[0m[0m "NADTC04-DATA-INGESTION-EXT-vpc-flow-logs"
+        }
+        [90m# (7 unchanged attributes hidden)[0m[0m
+    }
+
+[1m  # module.vpc_flow_logs.aws_iam_role.flow_logs_role[0m must be [1m[31mreplaced[0m
+[0m[31m-[0m/[32m+[0m[0m resource "aws_iam_role" "flow_logs_role" {
+      [33m~[0m[0m arn                   = "arn:aws:iam::584034200831:role/NADTC04-Data-Ingestion-EXT-vpc-flow-logs-role" -> (known after apply)
+      [33m~[0m[0m create_date           = "2026-03-04T10:53:49Z" -> (known after apply)
+      [33m~[0m[0m id                    = "NADTC04-Data-Ingestion-EXT-vpc-flow-logs-role" -> (known after apply)
+      [33m~[0m[0m managed_policy_arns   = [] -> (known after apply)
+      [33m~[0m[0m name                  = "NADTC04-Data-Ingestion-EXT-vpc-flow-logs-role" [33m->[0m[0m "NADTC04-DATA-INGESTION-EXT-vpc-flow-logs-role" [31m# forces replacement[0m[0m
+      [32m+[0m[0m name_prefix           = (known after apply)
+      [31m-[0m[0m tags                  = {} [90m-> null[0m[0m
+      [33m~[0m[0m tags_all              = {} -> (known after apply)
+      [33m~[0m[0m unique_id             = "AROAYP6ZGVT76NVBUXOTL" -> (known after apply)
+        [90m# (6 unchanged attributes hidden)[0m[0m
+
+      [31m-[0m[0m inline_policy {
+          [31m-[0m[0m name   = "flow-logs-inline-policy" [90m-> null[0m[0m
+          [31m-[0m[0m policy = jsonencode(
+                {
+                  [31m-[0m[0m Statement = [
+                      [31m-[0m[0m {
+                          [31m-[0m[0m Action   = [
+                              [31m-[0m[0m "logs:CreateLogGroup",
+                              [31m-[0m[0m "logs:CreateLogStream",
+                              [31m-[0m[0m "logs:PutLogEvents",
+                              [31m-[0m[0m "logs:DescribeLogGroups",
+                              [31m-[0m[0m "logs:DescribeLogStreams",
+                            ]
+                          [31m-[0m[0m Effect   = "Allow"
+                          [31m-[0m[0m Resource = "*"
+                        },
+                    ]
+                  [31m-[0m[0m Version   = "2012-10-17"
+                }
+            ) [90m-> null[0m[0m
+        }
+    }
+
+[1m  # module.vpc_flow_logs.aws_iam_role_policy.flow_logs_inline_policy[0m must be [1m[31mreplaced[0m
+[0m[31m-[0m/[32m+[0m[0m resource "aws_iam_role_policy" "flow_logs_inline_policy" {
+      [33m~[0m[0m id          = "NADTC04-Data-Ingestion-EXT-vpc-flow-logs-role:flow-logs-inline-policy" -> (known after apply)
+        name        = "flow-logs-inline-policy"
+      [32m+[0m[0m name_prefix = (known after apply)
+      [33m~[0m[0m role        = "NADTC04-Data-Ingestion-EXT-vpc-flow-logs-role" [31m# forces replacement[0m[0m -> (known after apply) [31m# forces replacement[0m[0m
+        [90m# (1 unchanged attribute hidden)[0m[0m
+    }
+
+[1mPlan:[0m 48 to add, 12 to change, 48 to destroy.
+[0m[90m
+─────────────────────────────────────────────────────────────────────────────[0m
+
+Note: You didn't use the -out option to save this plan, so Terraform can't
+guarantee to take exactly these actions if you run "terraform apply" now.
